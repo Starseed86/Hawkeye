@@ -1,0 +1,11 @@
+    function disableSelect(systemstatus){         
+        if(el.addEventListener){
+            el.addEventListener("mousedown",disabler,"false");
+        } else {
+            el.attachEvent("onselectstart",disabler);
+    };
+
+    function disabler(e){
+        if(e.preventDefault){ e.preventDefault(); }
+        return false;
+    ;}

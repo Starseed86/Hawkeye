@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "4393",
+    "ThreadId": "1343",
+    "Html": "\r\nHi,<br /><br />I m unable to add the \".csproj\" file to the source control, I do not understand what is happening !<br />I have correct a few problems in the previous check-ins but without theses files it is difficult to<br />work.<br /><br />Have you an idea ?<br /><br />Thanks<br />",
+    "PostedDate": "2006-09-11T05:16:34.68-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4425",
+    "ThreadId": "1343",
+    "Html": "\r\nFirst, sorry for the missing .csproj files. I'm still not used to working with TFS. Last couple of years I've been working with Subversion and now I can't find my way around in VS. I've just added the missing files and I hope you won't get many conflicts.<br /><br />Second, I notice that you started renaming the xml element in fsl files. Please note that yesterday I've added an update script to automate upgrading from earlier versions. So I would appreciate if you consult such changes first with me or at lest let me know what you are going to do. <br /><br />Szymon<br />",
+    "PostedDate": "2006-09-11T14:05:05.997-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

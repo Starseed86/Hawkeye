@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2006-09-13T06:35:35.71-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Sender: David\nDate: 12.07.2006\n \nHi Szymon,\nVersion growing up but quality go down :-)\n \nI found a new 3 bugs.\n \n1) when I set the WindowState on Maximized - the maximalization work not properly. The window begin not at top the screen and when you Close the form and run again and close and run... the top borde is traweling up and down with fixed steps.\n \n2) When is the WindowState set on Normal - it`s funny to. Try maximize and restore from maximize (manytime) and look on height of the Window  - it still increasing the Height of window.\n \n3) The caption buttons are visible in Designer only sometime.\n \nThe project is masterpiece but with these few bugs usable.",
+    "LastUpdatedDate": "2017-12-09T17:24:04.55-08:00",
+    "PlannedForRelease": "0.51 Alpha",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2006-08-02T03:36:31.5-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Problems with WindowState",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 0,
+    "Id": 1527
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": ">>When is the WindowState set on Normal - it`s funny to. Try maximize and restore from maximize (manytime) and look on height of the Window  - it still increasing the Height of window.\n\nAlso you can just swith the application button in the task bar. The result is the same. But I managed to find the solution. Just call base.WndProc(ref m) before you invoke WmNCCalcSize(...).",
+      "PostedDate": "2006-09-02T01:12:32.943-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "P.S. Sorry, text format doesn't work properly here... My comment starts from the words \"Also you can just ...\".",
+      "PostedDate": "2006-09-02T01:14:07.6-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Well, that solution works only if the form is in Normal state ;) In general you need to do some extra handling of WM_WINDOWPOSCHANGING and WM_WINDOWPOSCHANGED messages. Use a variable to indicate that form bounds should be reduced (after restore). In WM_WINDOWPOSCHANGED set it to true only if the form is minimized or maximized. In WM_WINDOWPOSCHANING check this flag and reduce the bounds appropriately. Use AdjustWindowRectEx here. You can consult me if you want to get more info (eisernWolf{NOSPAM|@}gmail.com).",
+      "PostedDate": "2006-09-06T21:45:49.18-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 5678.",
+      "PostedDate": "2006-09-13T06:35:35.71-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-14T13:26:09.58-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:02:44.61-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-12-09T17:24:04.55-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Custom Border Form does not work very well in Windows Vista.",
+    "LastUpdatedDate": "2017-12-09T17:24:05.86-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2006-08-24T13:31:02.597-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Windows Vista compatibility",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2542
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "The border initially shows up as either all black or all white.  If you drag the border off the screen and back, you can eventually get it looking normal.  Minimizing and maximizing the form will make it really wonky, and you will see system buttons in the top left of the form that do not work.\n\nThis is under the Aero Glass interface in Vista Beta 2.  This is a tough issue because the behavior might change depending on how Vista evolves.",
+      "PostedDate": "2006-08-24T13:33:46.29-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2006-09-12T08:15:13.857-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I was able to resolve this issue.  In the PaintNonClient area function,  //IntPtr hDC = NativeMethods.GetDCEx(hWnd, hRgn,            //    (int)(NativeMethods.DCX.DCX_WINDOW | NativeMethods.DCX.DCX_INTERSECTRGN            //        | NativeMethods.DCX.DCX_CACHE | NativeMethods.DCX.DCX_CLIPSIBLINGS));\r\n\r\nIs called.  This function is not working correctly in Windows XP 64 bit or Windows Vista.  It will return the null pointer in some cases.                     IntPtr hDC = NativeMethods.GetWindowDC(hWnd);This second call works correctly in all OSes i've tested from Win2k to Vista RC2 64 bit.  I'm not quite sure what the problem is, or what I lose by calling it instead, but it works.\r\n\r\n(add the following to NativeMethods)        [DllImport(\"user32.dll\")]        public static extern IntPtr GetWindowDC(IntPtr hwnd);",
+      "PostedDate": "2006-11-16T14:04:23.96-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hello,\r\n\r\nthanks for the fix although we loose the clip siblings option. In my About box where I have a textbox above the custom background, the textbox disappears when hovered...\r\n\r\nSo I think we need a true Vista compatibility.Thanks",
+      "PostedDate": "2007-02-08T13:17:58.847-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-02-08T13:18:41.74-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I am having problem while using CustomBorderForm in Vista. Title bar of the form becomes invisible or sometimes becomes white and the minimize, maximize and close button also becomes invisible. Please give me solution for this if anyone have found. Thanks a lot.",
+      "PostedDate": "2010-01-23T01:43:14.81-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-14T13:26:07.893-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-12-09T17:24:05.86-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

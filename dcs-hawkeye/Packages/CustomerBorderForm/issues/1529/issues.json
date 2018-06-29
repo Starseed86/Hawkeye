@@ -1,0 +1,110 @@
+[
+  {
+    "Id": 1524,
+    "Title": "Add support for round corners"
+  },
+  {
+    "Id": 1525,
+    "Title": "Allow adding additional title bar buttons"
+  },
+  {
+    "Id": 1526,
+    "Title": "Improve performance"
+  },
+  {
+    "Id": 1527,
+    "Title": "Problems with WindowState"
+  },
+  {
+    "Id": 1528,
+    "Title": "Help button doesn't work"
+  },
+  {
+    "Id": 1529,
+    "Title": "Add support for .NET 1.x"
+  },
+  {
+    "Id": 1530,
+    "Title": "Close button should not work when disabled"
+  },
+  {
+    "Id": 1531,
+    "Title": "Buttons should wait to execute action for MouseUp"
+  },
+  {
+    "Id": 2246,
+    "Title": "MDI support"
+  },
+  {
+    "Id": 2414,
+    "Title": "Large icon not scalled correctly"
+  },
+  {
+    "Id": 2415,
+    "Title": "Background not repainted under transprent buttons"
+  },
+  {
+    "Id": 2416,
+    "Title": "Background not repainted under transprent buttons"
+  },
+  {
+    "Id": 2542,
+    "Title": "Windows Vista compatibility"
+  },
+  {
+    "Id": 2544,
+    "Title": "New UpdateBackground function in CustomBorderForm.cs throws an exception"
+  },
+  {
+    "Id": 2983,
+    "Title": "Test the project on different platforms"
+  },
+  {
+    "Id": 3006,
+    "Title": "Refactoring"
+  },
+  {
+    "Id": 3048,
+    "Title": "Win2k Compatibility issue"
+  },
+  {
+    "Id": 3137,
+    "Title": "Refine invalidate calls in base form"
+  },
+  {
+    "Id": 3143,
+    "Title": "BUG - it is when you maximize the form ... nothing work with the caption buttons..."
+  },
+  {
+    "Id": 3270,
+    "Title": "Repainting is not happening effectively on form"
+  },
+  {
+    "Id": 3271,
+    "Title": "Maximizing on large display offsets caption bar"
+  },
+  {
+    "Id": 3370,
+    "Title": "Caption Buttons are not well placed when Maximized"
+  },
+  {
+    "Id": 5905,
+    "Title": "Minimize/Restore with hidden caption bar makes window shrink/grow"
+  },
+  {
+    "Id": 7111,
+    "Title": "Windows Server 2003 Issues"
+  },
+  {
+    "Id": 18475,
+    "Title": "Dragging captions buttons displays 'normal' button"
+  },
+  {
+    "Id": 35234,
+    "Title": "Form Icon Incorrectly Scaled"
+  },
+  {
+    "Id": 35766,
+    "Title": "Not Working on Windows 7"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "3241",
+    "ThreadId": "998",
+    "Html": "\r\nRecently I've got several requests regarding round corners. In the sample code the LonghorForm class implements this by manually overriding the OnResize event and adjusting own Region. <br /><br />But I think this such a common feature that we should integrate it into the core class and support configuration in skin files. I would like to implement this for the next release, but don't have yet how to implement this.<br /><br />First, I'm not certain if this is the right way of doing things. My concern is how efficient it is, considering the Region is recreated on each Resize event.<br /><br />Second, I still haven't decided how to implement the configuration for this region. <br /><br />My first idea is to add RoundCorners property on the FormStyle level with four properties that specify arc diameters for every corner (TopLeft, TopRight, BottomLeft, BottomRight).<br /><br />Second idea is to support custom form shapes by using additional bitmap defining the transparent regions. This would work fine for not resizable form but for sizing would require scaling the image (using the StretchMargin technique we use). Again in this case my concern is efficiency of such solution. <br /><br />Do you have any experience with transparent windows? Which solution would you prefer? Maybe we should support both?<br />",
+    "PostedDate": "2006-08-23T15:25:21.163-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "3273",
+    "ThreadId": "998",
+    "Html": "\r\nHi,<br /><br />When I took your code to create my own skinning assembly, I went over multiple ways to support rounded corners. And I'll try to share with you my conclusions.<br /><br />First, you're right telling that calculating the form's region with rounded corners is not efficient performance wise.<br /><br />The way I implemented was using a GraphicsPath as you do and have the diameter of the rounding set by a property in the styles. This works fine when you have real round graphics but if you have corners using an Elipse, you'll get some artifacts on the transparent area of the bitmap used to render the corner.<br /><br />There are from my research three ways to solve this situation:<br /><br />1. Calculate Transparent Pixels in the OnResize of the CustomBorderForm<br /><br />Description:<br />For each corner of the form, we apply a per pixel algorithm that will track from the top left pixel (on the top left corner: for the top right corner, it would be top right pixel...) which pixels are transparent and add them to a GraphicsPath that will be used to remove a region from the whole Form region.<br />In order to optimize it, you can make sure that you only apply the algorithm on corners that need to be repainted on resize (for instance, no need to recalculate the top left corner transparency when you are growing the form size from the bottom right corner...).<br /><br />Advantages:<br />Fully accurate, no artifacts.<br /><br />Drawbacks:<br />Performance wise: extremelly low.<br /><br />Conclusion: can't be used because it would affect user experience too much.<br /><br />2. Fixed Rounding specifications<br /><br />Description:<br />We would use the exact same procedure as you implemented in the OnResize of the LonghornForm class but adding a Round property to the style so that we can change it.<br />However, that would just say that it would fix the corners to use real rounded corners and nothing else.<br /><br />Advantages:<br />Accurate (if you respect specifications)<br /><br />Drawbacks:<br />Too limited on what kind of skin you want.<br /><br />3. Compiled Rounded Corners<br /><br />Description:<br />This option would allow the developer to calculate once when saving the skin, the corners transparency regions and save them as part of the skin description.<br />Then, in the OnResize override in CustomBorderForm, we would just remove those transparent regions from the whole form region (which would have been created within the OnNonClientCalcSize method).<br /><br />Advantages:<br />Fully accurate: no artifacts.<br /><br />Drawbacks:<br />Is there one?<br />",
+    "PostedDate": "2006-08-24T03:36:38.947-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4588",
+    "ThreadId": "998",
+    "Html": "\r\nTake a look at this:<br /><br />http://windowsforms.net/articles/usingregionmastercontrols.aspx<br />",
+    "PostedDate": "2006-09-14T04:18:58.127-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4641",
+    "ThreadId": "998",
+    "Html": "\r\nHi,<br /><br />I have added automatic corner detection.<br /><br />How it work :<br /><br />1 - It detect the \"transparent\" pixels on the form background's bitmap and create a region. It it done 1 time at startup (and when skin change)<br />2 - At each resize, the region is resized too and applyied to the form.<br /><br />Note that you have to define the \"SkinBitmapTransparentColor\" to the color that identify the \"transparent color\".<br />By default it is (255,0,255)<br /><br />There is some \"refreshing problem\" when resizing, but it is not related to corners I think.<br />Anyway if you find some way to speed it up... just do it ;-)<br /><br />Regards<br />",
+    "PostedDate": "2006-09-15T07:33:20.47-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

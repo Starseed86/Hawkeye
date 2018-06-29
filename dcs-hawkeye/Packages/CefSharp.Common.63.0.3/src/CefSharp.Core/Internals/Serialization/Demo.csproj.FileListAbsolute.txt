@@ -1,0 +1,14 @@
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\Demo\bin\Debug\Properties\Settings.Designer.cs
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\Demo\bin\Debug\Properties\Settings.settings
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\Demo\bin\Debug\Demo.exe
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\Demo\bin\Debug\Demo.pdb
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\Demo\bin\Debug\Lizard.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\Demo\bin\Debug\LizardEditor.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\Demo\bin\Debug\LizardEditor.pdb
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\Demo\bin\Debug\Lizard.pdb
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\Demo\obj\Debug\Demo.csprojResolveAssemblyReference.cache
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\Demo\obj\Debug\Samples.Demo.DemoForm.resources
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\Demo\obj\Debug\Samples.Demo.Properties.Resources.resources
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\Demo\obj\Debug\Demo.csproj.GenerateResource.Cache
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\Demo\obj\Debug\Demo.exe
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\Demo\obj\Debug\Demo.pdb

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "3964",
+    "ThreadId": "1227",
+    "Html": "\r\nHi,<br /><br />Can I join the project as developer ?<br /><br />I'm working on the \"custom caption buttons\"... 99% implemented. I would like to integrate it in your version, is it possible ?<br /><br />Thanks<br /><br />Krys<br />",
+    "PostedDate": "2006-09-05T01:15:16.513-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4085",
+    "ThreadId": "1227",
+    "Html": "\r\nHi Cdemez,<br /><br />First, sorry to all of you for the delay. I'm currently a bit overwhelmed with my primary work but this should back to normal next week. <br /><br />I'm really glad that you want to join our project. I've already added you to the team. Please let us know when you complete your changes so we can see how it works. <br /><br />Thanks you for support.<br /><br />",
+    "PostedDate": "2006-09-06T14:55:44.177-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4114",
+    "ThreadId": "1227",
+    "Html": "\r\nThanks for all,<br /><br />I have already do some change in a local copy of your library.<br /><br />Today, I will connect to the codeplex server and get the source code, update it and chek it in.<br /><br />I already have do some parts of the work and have a sample... it remain to handle the events...<br /><br />I ll let you know...<br /><br />Thanks again<br />",
+    "PostedDate": "2006-09-07T00:00:58.603-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

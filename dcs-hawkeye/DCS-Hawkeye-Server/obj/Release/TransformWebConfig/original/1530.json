@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2006-08-17T12:08:58.823-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Sender: Thomas Williams \nDate: 21.6.2006\n \nG'day Szymon - \n \nThanks for the cool control! \n \nOne thing I noticed - even if the close button is disabled or not there, clicking where it should be in the top right-hand corner of the form will close the form. \n \nCheers, \n \nThomas",
+    "LastUpdatedDate": "2017-12-09T17:24:04.887-08:00",
+    "PlannedForRelease": "0.51 Alpha",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2006-08-02T03:59:18.747-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Close button should not work when disabled",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 0,
+    "Id": 1530
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 3494.",
+      "PostedDate": "2006-08-17T12:08:58.823-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-14T13:26:09.043-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:02:44.317-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-12-09T17:24:04.887-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

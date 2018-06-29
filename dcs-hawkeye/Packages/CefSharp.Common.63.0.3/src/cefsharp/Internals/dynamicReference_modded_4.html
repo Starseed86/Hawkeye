@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+	<title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+        #systemstatus { position: fixed; margin: auto; height: 200px; width: 100%; background: transparent; color: cadetblue; top: 20px; vertical-align: top;}
+        #systemstatus .title {color: rgb(126, 255, 0); font-size: x-large; font-family: "Courier New", Courier, monospace; font-weight: bold; line-height: 1px;}
+        #systemstatus .positiondata {color: yellow; font-size: x-large; font-family: "Courier New", Courier, monospace; font-weight: bold; vertical-align: top;}
+        #marker {display: block; border: none; border-radius: 25%; cursor: pointer; padding: 0;}
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<div id ="systemstatus">
+    <table style ="padding:0; border-spacing:0; width:100%">
+        <tr style="height:200px; vertical-align: text-top;">
+            <td style="width:30%; padding: 20px; text-align: left">
+                <span class="positiondata"; ;>44.435224N, 60.502106W</span>
+            </td>
+            <td style="width:40%; text-align: center">
+                <span class="title">System Status:  Fully Operational</span>
+                <p id="systemtime" class="title"></p>
+                <br>
+                <span class="title">UNCLASSIFIED</span>
+            </td>
+            <td style="width:30%; padding: 20px; text-align: right">
+                <span class="positiondata"; >Lat/Lng    43.191402 -63.814877</span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZGF2aWRndWFuIiwiYSI6ImNpcG50N2s4NDAwNGRmbG5jeXZtMHkxMW4ifQ.ubiXybBxhpidF83H-Zvz7Q';
+
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/durham/cjgjuhv9f00022rps2rh1u380',
+        center: [41.615152, 41.625191],
+        zoom: 1,
+		attributionControl: false
+    });
+	map.dragPan.enable();
+	map.dragRotate.disable();
+
+    var url = 'https://wanderdrone.appspot.com/';
+    map.on('load', function () {
+        window.setInterval(function() {
+            map.getSource('drone').setData(url);
+        }, 2000);
+
+    map.addSource('drone', { type: 'geojson', data: url });
+    map.addLayer({
+        "id": "drone",
+        "type": "symbol",
+        "source": "drone",
+        "layout": {
+            "icon-image": "air_fw_hostile"
+        }
+    });
+});
+</script>
+<script type="text/javascript">
+    window.setInterval(function ()
+    {
+        function formatDate(date)
+        {
+          var hours = date.getHours();
+          var minutes = date.getMinutes();
+          var seconds = date.getSeconds();
+          var ampm = hours >= 12 ? 'PM' : 'AM';
+          hours = hours % 12;
+          hours = hours ? hours : 12; // the hour '0' should be '12'
+          minutes = minutes < 10 ? '0'+minutes : minutes;
+          seconds = seconds < 10 ? '0'+seconds : seconds;
+          var strDateTime = date.getMonth()+1 + "/" + date.getDate() + "/" + date.getFullYear() + " " +  hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+          return strDateTime;
+        }
+        var d = new Date();
+        var e = formatDate(d)
+        document.getElementById("systemtime").innerHTML = e;
+    }, 1000);
+</script>
+</body>
+</html>

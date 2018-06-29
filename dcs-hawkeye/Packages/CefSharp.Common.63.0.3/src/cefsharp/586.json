@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1786",
+    "ThreadId": "586",
+    "Html": "\r\nHi,<br />As stated on the home page, this project started as series of articles on drawing in non-client area in Windows Forms. Till now it was hosted on ProjectDistributor but as I feel need for additional tools like source control and issue tracker I decided to move it to CodePlex. <br /><br />Today I've managed to migrate the current release, sources and portions from the original articles. I've also entered some issues that ware posted on the comments. However, because starting today I'm going for two weeks vacations and won't be able to complete this before I return. <br /><br />In the meantime I encourage you to try out the current release and submit any issues and suggestions. Also please contact me if you like to join me in this project.<br /><br />Thanks,<br />Szymon<br />",
+    "PostedDate": "2006-08-02T09:00:25.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1797",
+    "ThreadId": "586",
+    "Html": "\r\nHi Kobush,<br /><br />I would like to participate to this project. I'm already basing part of my development based on what you've done in v 0.4 and I slightly changed it to fit some design concepts I thought would be better.<br /><br />Happy to share it with you and the community.<br /><br />Regards,<br /><br />Amadrias<br />",
+    "PostedDate": "2006-08-02T11:37:45.63-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "2865",
+    "ThreadId": "586",
+    "Html": "\r\nHi,<br />I've returned just yesterday and boy, these two weeks was great. Now I have full strength to start working (he he).<br /><br />Amadrias, thanks for your commitment, I've already registered you as a developer. You can try to install Team Explorer and download the project. I would be happy to hear about your design ideas so please post them in this forum. <br /><br />Szymon. <br />",
+    "PostedDate": "2006-08-17T09:42:15.983-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "2924",
+    "ThreadId": "586",
+    "Html": "\r\nHi kobush,<br /><br />Thanks for inviting me in the team.<br /><br />I think there's quite a lot of things I would like to share to you so, instead of posting all of them (which would get into having a long long post), I'll put everything together in a word document.<br /><br />You'll here from me soon...<br />",
+    "PostedDate": "2006-08-18T02:02:34.153-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "2929",
+    "ThreadId": "586",
+    "Html": "\r\nFinally, it can be summarized in a few lines and I decided to post my ideas in the forum. I created a thread on that purpose.<br />",
+    "PostedDate": "2006-08-18T03:19:20.41-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

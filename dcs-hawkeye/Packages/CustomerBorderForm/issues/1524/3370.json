@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When the window is maximized, the buttons are not at the right place, the should be shifted from 3-4 pixels down...\n \nIt should be related to window frame/border size, maybe.",
+    "LastUpdatedDate": "2017-12-09T17:24:06.65-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2006-09-18T02:48:46.973-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Caption Buttons are not well placed when Maximized",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 0,
+    "Id": 3370
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

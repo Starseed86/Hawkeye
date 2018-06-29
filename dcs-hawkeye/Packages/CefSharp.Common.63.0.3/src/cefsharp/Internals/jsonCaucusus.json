@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.6168,
+          41.6367
+        ]
+      },
+      "properties": {
+        "title": "Batumi",
+        "icon": "air_friendly"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.2662,
+          42.718
+        ]
+      },
+      "properties": {
+        "title": "Kutaisi",
+        "icon": "air_enemy"
+      }
+    }
+  ]
+}

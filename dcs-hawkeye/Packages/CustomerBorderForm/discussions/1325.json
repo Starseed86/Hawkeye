@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "4323",
+    "ThreadId": "1325",
+    "Html": "\r\nRecently I was contacted by someone who wanted to use the project in his commercial application. I don't have any problems with that of what soever. However this person reported that lawyers on his company had some problems with our licence. Apparently he wanted to embed the library directly in his application (by using ILMerge) but for some reason this is against the rules of LGPL. I wasn't aware of that and my intention wasn't to forbid anyone doing so.<br /><br />This made me realize that I haven't really put much thought when choosing the licence. I just wanted the project to be open-source and available to everyone without restrictions. I choose LGPL because I know it's less limiting then LGPL. Now I see this turned out to be not the most fortunate choice so I will try to find other licence that would better suit our project. <br /><br />I don't have any lawyer at hand to help me with this so I hope I can find some help on the Internet. If you have any advice or know of any good source of information please let me know. If you lead an open-source project tell me which license did you pick and why.<br /><br />Here is a list of resources I found so far:<br /> * OpenSource.org Licenses - http://www.opensource.org/licenses/<br /> * Microsoft Shared Source Licenses - http://www.microsoft.com/resources/sharedsource/default.mspx<br /> * Creative Commons Licenses - http://creativecommons.org/license/<br /> * Hanselminutes 28: Open Source Options - http://www.hanselminutes.com/default.aspx?showID=38<br />",
+    "PostedDate": "2006-09-10T03:19:43.877-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4327",
+    "ThreadId": "1325",
+    "Html": "\r\nI've did a bit of research last few hours and now I'm leaning towards one of the most liberal licenses like BSD, MIT, or zlib/libpng. Basically they don't put any restrictions on the use of the software as long there is some recognition to original authors and thay are not held liable for any damage. <br /><br />I particularly like the last one because it doesn't requires the user to include the copyright notice on every single source file he uses. You can read the full license here (it's very short): http://www.opensource.org/licenses/zlib-license.php<br /><br />So tell me what do you think? Do you think it would be OK if we apply this license?<br />",
+    "PostedDate": "2006-09-10T06:14:52.067-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4356",
+    "ThreadId": "1325",
+    "Html": "\r\nI think it could be OK for me.<br /><br />However, have you looked at the CreativeCommon (cc) licenses? I do think they entered perfecetly on what we are trying to achieve here.<br />",
+    "PostedDate": "2006-09-10T15:39:05.08-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4362",
+    "ThreadId": "1325",
+    "Html": "\r\nI was considering creative commons licenses, but then I found somewhere that the creative commons folks explicitly discourage using the creative commons licenses for software, as they were not written with such usage in mind.<br /><br />http://wiki.creativecommons.org/FAQ#Can<i>I</i>use<i>a</i>Creative<i>Commons</i>license<i>for</i>software.3F<br />",
+    "PostedDate": "2006-09-10T21:48:52.263-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4409",
+    "ThreadId": "1325",
+    "Html": "\r\nHave you looked at the following two licenses?<br /><br />http://creativecommons.org/license/cc-gpl?lang=en<br /><br />http://creativecommons.org/license/cc-lgpl?lang=en<br />",
+    "PostedDate": "2006-09-11T09:45:02.793-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "136480",
+    "ThreadId": "1325",
+    "Html": "Hi, was just wondering if you've actually changed the license, or if you intend to, as the current license is still LGPL.<br>\r\nthanks,<br>\r\nDaniel<br>\r\n",
+    "PostedDate": "2008-11-30T21:34:45.44-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

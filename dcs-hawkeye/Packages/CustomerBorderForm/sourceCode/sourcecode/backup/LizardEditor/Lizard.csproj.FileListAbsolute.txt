@@ -1,0 +1,8 @@
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Lizard\bin\Debug\Properties\Settings.Designer.cs
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Lizard\bin\Debug\Properties\Settings.settings
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Lizard\bin\Debug\Lizard.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Lizard\bin\Debug\Lizard.pdb
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Lizard\obj\Debug\Lizard.Properties.Resources.resources
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Lizard\obj\Debug\Lizard.csproj.GenerateResource.Cache
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Lizard\obj\Debug\Lizard.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Lizard\obj\Debug\Lizard.pdb

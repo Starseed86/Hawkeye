@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "4881",
+    "ThreadId": "1501",
+    "Html": "\r\nAll,<br />Great stuff. However, I ran into multiple issues and also need enhancements which I don't have much time to fix/implement at this time. If someone is interested I am accepting bids  for these to be addressed very soon and undoubtedly included in the public project. <br />Here are some items:<br /><br />1. Ugly native title bar buttons show when pressing on custom buttons<br />2. The form can't be automatically resized below certain width, i.e, a call to this.Width = 20; will set the width to something over 100 even though you can decrease the size with the mouse.<br /><br />3. There's a problem displaying icons when a vertical bar remains on mouse up. Will provide details.<br /><br />5. Implement docking to the desktop<br /><br />6. The window crashes when resized to 0 width.<br /><br />7. Minor: Rich forms don't refresh properly on resize, get holes in the background, however slapping a bacckground panel helps. <br /><br /><br />",
+    "PostedDate": "2006-09-21T06:58:37.92-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "5001",
+    "ThreadId": "1501",
+    "Html": "\r\nOk, please contact me to cdemez2@hotmail.com and we will discuss about this.<br /><br />Thanks<br />",
+    "PostedDate": "2006-09-25T06:31:41.517-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

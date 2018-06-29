@@ -1,0 +1,121 @@
+<div class="wikidoc"><h2>Extending Form with Non-Client Area Painting</h2>
+Each window we see on screen (be it a Form, UserControl or any other Control) is described by two rectangles: the bounds of the window and it&#39;s client area. Bounds specify the location and size of the window as a whole while the client area specifies the region inside the window that is accessible for client controls. By default Windows Forms allows us to access only the client part of the window. To gain access to the non-client part we need to intercept some additional Windows messages. We can do this by overriding the WndProc message loop. For each message I defined dedicated method, so my WndProc method only redirects calls to this methods. <br />
+<h3>Positioning the Client Ractangle</h3>If we are going to draw our custom borders good chances are that their size and proportions will differ from the standard ones. To correct this we need to specify a new client rectangle for the window. This is done in the WM<i>NCCALCSIZE message. This message can be raised in two ways. When WParam is equal to zero the LParam points to RECT structure with window bound that we should adjust to proposed client ractangle. Alternatively, when WParam value is one the LParam points to NCCALCSIZE</i>PARAMS strucure allowing to move the existing client area inside the window. For our purpose we will simply adjust the proposed rectangle to required coordinates.<br /><br /><pre>
+private void WmNCCalcSize(ref Message m)
+{
+    if (m.WParam == NativeMethods.FALSE)
+    {
+        NativeMethods.RECT ncRect = (NativeMethods.RECT)m.GetLParam(typeof(NativeMethods.RECT));
+        Rectangle proposed = ncRect.Rect;
+        OnNonClientAreaCalcSize(ref proposed);
+        ncRect = NativeMethods.RECT.FromRectangle(proposed);
+        Marshal.StructureToPtr(ncRect, m.LParam, false);
+    }
+    else if (m.WParam == NativeMethods.TRUE)
+    {
+        NativeMethods.NCCALCSIZE_PARAMS ncParams =
+            (NativeMethods.NCCALCSIZE_PARAMS)m.GetLParam(typeof(NativeMethods.NCCALCSIZE_PARAMS));
+        Rectangle proposed = ncParams.rectProposed.Rect;
+        OnNonClientAreaCalcSize(ref proposed);
+        ncParams.rectProposed = NativeMethods.RECT.FromRectangle(proposed);
+        Marshal.StructureToPtr(ncParams, m.LParam, false);
+    }
+    m.Result = IntPtr.Zero;
+}
+</pre><br /><br />Note that this method calls a virtual <b>OnNonClientAreaCalcSize</b> method taking a Rectangle that you can overwrite to adjust the proposed client ractangle.<br />
+<h3>Painting the non-client area</h3>The main message responsible for painting the non-client area is the WM_NCPAINT message. The WParam for this message contains the handle to a clip region or 1 (one) if entire window should be repainted. So to paint anything we only need to create a Graphics object from the window handle and use it as we would in the typical <b>OnPaint</b> method.<br /><br /><pre>
+private void WmNCPaint(ref Message msg)
+{
+    PaintNonClientArea(msg.HWnd, (IntPtr)msg.WParam);
+    msg.Result = NativeMethods.TRUE;
+}
+</pre><br /><br />Now is the tricky part: if you leave it that way you quickly notice that on ocassionally you still get some parts of the standard border painted over your brand new framing. That indicates that there are some other messages that cause painting in the non-client area. <br /><br />The first one is the WM_SETTEXT message that transports new title for the window (stored as Text property on the Form). Apparently it also repaints the border in order to update the title bar. Of course, we still want to send out the new title so we need to pass the message to the <b>DefWndProc</b> method. But we will handle painting on our own.<br /><br /><pre>
+private void WmSetText(ref Message msg)
+{
+    DefWndProc(ref msg);
+    PaintNonClientArea(msg.HWnd, (IntPtr)1);
+}
+</pre><br /><br />The second culprit happens to be the WM_ACTIVATE message that is responsible for switching the window active state. Window is active when it is the top level window that you interact with and it has different border to reflect this state. When you switch to another window the first one updates its border to indicate that it has lost the focus. The WParam of this messages holds the window active state and is 1 when border should be drawn as active and zero otherwise. We will handle the painting and skip to the DefWndProc only when window is minimized.<br /><br /><pre>
+private void WmNCActivate(ref Message msg)
+{
+    bool active = (msg.WParam == NativeMethods.TRUE);
+    if (this.WindowState == FormWindowState.Minimized)
+        DefWndProc(ref msg);
+    else
+    {
+        PaintNonClientArea(msg.HWnd, (IntPtr)1);
+        msg.Result = NativeMethods.TRUE;
+    }
+}
+</pre><br /><br />I agree that this is big design inconsequence and all painting should be done in one place but it&#39;s been around for a long time and we must live with it. Now that we cleared this out we can get down to actual painting.<br /><br />The most important thing here is to get the correct hDC handle and we wil use native <b>GetDCEx</b> function for that. It takes three parameters: the window handle, the clip region and option. First two we got already from the messages. As for the options the MSDN states that only WINDOW and INTERSECTRGN are needed, but other sources confirm that CACHE is required on Win9x and you need CLIPSIBLINGS to prevent painting on overlapping windows. <br /><br />If we get a valid hDC we can easily create the <b>Graphics</b> object with a call to <b>Graphics.FromHdc()</b>, paint our stuff and dispose it. Note that (although some sources state otherwise) disposing Graphics instance wont free the hDC so we need to do this manually by calling <b>ReleaseDC</b> to prevent GDI objects leak. <br /><br /><pre>
+private void PaintNonClientArea(IntPtr hWnd, IntPtr hRgn)
+{
+    NativeMethods.RECT windowRect = new NativeMethods.RECT();
+    if (NativeMethods.GetWindowRect(hWnd, ref windowRect) == 0)
+        return;
+
+    Rectangle bounds = new Rectangle(0, 0,
+        windowRect.right - windowRect.left,
+        windowRect.bottom - windowRect.top);
+
+    if (bounds.Width == 0 || bounds.Height == 0)
+        return;
+
+    Region clipRegion = null;
+    if (hRgn != (IntPtr)1)
+        clipRegion = System.Drawing.Region.FromHrgn(hRgn);
+
+    IntPtr hDC = NativeMethods.GetDCEx(hWnd, hRgn,
+        (int)(NativeMethods.DCX.DCX_WINDOW | NativeMethods.DCX.DCX_INTERSECTRGN
+            | NativeMethods.DCX.DCX_CACHE | NativeMethods.DCX.DCX_CLIPSIBLINGS));
+
+    if (hDC == IntPtr.Zero)
+        return;
+
+    using (Graphics g = Graphics.FromHdc(hDC))
+    {
+        OnNonClientAreaPaint(new NonClientPaintEventArgs(g, bounds, clipRegion));
+    }
+   
+    NativeMethods.ReleaseDC(this.Handle, hDC);
+}
+</pre><br /><br />At the begining ot this method I use native GetWindowRect function to get the correct coordinates of the window. At this point the Bounds property is not accurate and especially during resizing seems to always stay behind. Next I validate window size as obviously no painting is needed when it is empty. The actual painting should be done in the virtual OnNonClientAreaPaint method.<br /><br />!!!Removing flicker with double-buffering<br />Unfortunatelly painting this way is fine only as long as you don&#39;t try to resize the window. When you do that you will see very unpleasant flickering. Totally not cool. We need to apply double-buffering in order to fix this and I just found a cool mechanism in .NET Framework that should help with that. <br /><br />There is a class called a BufferedGraphics buried in the System.Drawing namespace. It&#39;s the same class that is used when you set DoubleBuffered flag on any control. (To be honest I haven&#39;t checked if this class existed prior to .NET 2.0). There is also a factory class called BufferedGraphicsManager that we use to create such object. The Allocate method takes either an existing Graphics object or the targetDC handle. Having an instance of BufferedGraphics we obtain a real Graphics object, do the painting as usual, and then call the Render method to draw the buffered image to the screen (presumably using some form of bit blitting). <br /><br /><pre>
+using (BufferedGraphics bg = BufferedGraphicsManager.Current.Allocate(hDC, bounds))
+{
+    Graphics g = bg.Graphics;
+    OnNonClientAreaPaint(new NonClientPaintEventArgs(g, bounds, clipRegion));
+    bg.Render();
+}
+</pre><br /><br />Whew, the above code looks to simple to possibly work. And indeed it doesn&#39;t! It all looks good when the window stays active, but when it gets covered by another window suddenly all of the client area gets painted in black. So there is something missing, like establishing a clip region to exclude this area from bliting. I hope that someone smarter then me could help and figure out a better way to fix this.<br /><br />In the mean time we have to implement do double-buffering on our own:<br /><br /><pre>
+    IntPtr CompatiblehDC = NativeMethods.CreateCompatibleDC(hDC);
+    IntPtr CompatibleBitmap = NativeMethods.CreateCompatibleBitmap(hDC, bounds.Width, bounds.Height);
+
+    try
+    {
+        NativeMethods.SelectObject(CompatiblehDC, CompatibleBitmap);
+        NativeMethods.BitBlt(CompatiblehDC, 0, 0, bounds.Width, bounds.Height, 
+            hDC, 0, 0, NativeMethods.TernaryRasterOperations.SRCCOPY);
+
+        using (Graphics g = Graphics.FromHdc(CompatiblehDC))
+        {
+            OnNonClientAreaPaint(new NonClientPaintEventArgs(g, bounds, clipRegion));
+        }
+
+        NativeMethods.BitBlt(hDC, 0, 0, bounds.Width, bounds.Height, 
+           CompatiblehDC, 0, 0, NativeMethods.TernaryRasterOperations.SRCCOPY);
+    }
+    finally
+    {
+        NativeMethods.DeleteObject(CompatibleBitmap);
+        NativeMethods.DeleteDC(CompatiblehDC);
+    }
+</pre><br /><br />This one works but still is not perfect. The BitBlt operation is quite slow so we will need to see to it in the future.<br />
+<h3>A not so scary ghost story</h3>There are two more things that need to be done in order to get perfectly drawn custom border. First thing is to completely get rid of XP themes on our window. We have already taken over all painting but when themes are turned on they also might affect other aspects of window. For example thay would likely change the window shape to something non-rectangular (like adding round corners) and obviously we want to prevent this. We will use the <b>SetWindowTheme</b> function from uxtheme.dll with empty parameters to completely disable theming on the current window. Note however that this will only affect the window itself so you don&#39;t need to worry that you loose theming on the controls placed in it&#39;s content area.<br /><br />As for the second thing, I wonder how many of you heard about windows &quot;ghosting&quot; feature? I didn&#39;t know about it until recently. Quoting MSDN: &quot;Window ghosting is a Windows Manager feature that lets the user minimize, move, or close the main window of an application that is not responding.&quot; Basically when the process doesn&#39;t respond to window messages within designated time (hangs) the Windows Manager will finally loose patience and draw the window frame by itself allowing the user to do something with the application. This can hapen when the process executes some long running task (like data query or cpu intensive processing) in the same thread as the windows message loop. <br /><br />In theory this should never happen for a well written application that delegates all heavy processing to background workers. But I haven&#39;t written such application yet. This feature can be disabled using <b>DisableProcessWindowsGhosting</b> function from user32.dll but it will affect the entire application. Now it&#39;s your decision whether you want to present the users with consistent user experience even on these odd occasions or you can cope with some occasional quirks but let the user control the situation all the time.<br /><br /><pre>
+protected override void OnHandleCreated(EventArgs e)
+{
+    NativeMethods.SetWindowTheme(this.Handle, &quot;&quot;, &quot;&quot;);
+    NativeMethods.DisableProcessWindowsGhosting();
+    
+base.OnHandleCreated(e);
+}
+</pre></div><div class="ClearBoth"></div>

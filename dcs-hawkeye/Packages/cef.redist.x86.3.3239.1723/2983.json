@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Because this code was written and tested on Windows XP Professional there can be problems on other versions of Windows like Windows 2003 Server or Windows XP 64-bit. \n \nThe first goal is to create a list of supported platforms. So if you have access to computer running such please report it works or not. \n \nIf you find any bugs please enter them as comments here or as new work items with details on the platform you use.",
+    "LastUpdatedDate": "2013-02-14T13:26:07.54-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2006-09-07T15:26:28.04-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Test the project on different platforms",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 0,
+    "Id": 2983
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Win2k Incompatiblities:\n\nRight now the Custom Border Form library P/Invokes to uxtheme.dll.  This dll isn't present on all versions of Windows, and didn't appear to be present on Win2k.  We fixed it by putting a Windows version check around the call to UXTheme.  If anyone else has a more elegant solution I'd love to hear it too.",
+      "PostedDate": "2006-09-08T04:56:44.633-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-14T13:26:07.54-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

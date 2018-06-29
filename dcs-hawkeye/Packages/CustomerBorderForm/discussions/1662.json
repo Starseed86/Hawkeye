@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "5307",
+    "ThreadId": "1662",
+    "Html": "\r\nSuper great project, just what I was looking for BUT<br />I'm trying to use the project in VB, since I don't know C#.<br />I've included a project inside your solution and I created a new form wich inherits from LongHornForm.<br />My new form show up with the modified style, but no controls are showing??<br />Here's the code from the form:<br />Imports Kobush.Windows.Forms<br />Imports System<br />Imports System.Collections.Generic<br />Imports System.ComponentModel<br />Imports System.Data<br />Imports System.Drawing<br />Imports System.Windows.Forms<br /><br />Namespace kobush.windows.forms<br />    &lt;System.ComponentModel.DesignerCategory(\"form\")&gt; _<br />    Partial Public Class Form1<br />        Inherits LonghornForm<br /><br />        Private Sub InitializeComponent()<br />            Me.components = New System.ComponentModel.Container<br />            Me.FormStyleEditor1 = New FormStyleEditor(Me.components)<br />            Me.Panel1 = New System.Windows.Forms.Panel<br />            Me.StatusStrip1 = New System.Windows.Forms.StatusStrip<br />            Me.SuspendLayout()<br />            '<br />            'Panel1<br />            '<br />            Me.Panel1.Location = New System.Drawing.Point(3, 3)<br />            Me.Panel1.Name = \"Panel1\"<br />            Me.Panel1.Size = New System.Drawing.Size(256, 172)<br />            Me.Panel1.TabIndex = 0<br />            '<br />            'StatusStrip1<br />            '<br />            Me.StatusStrip1.Location = New System.Drawing.Point(0, 178)<br />            Me.StatusStrip1.Name = \"StatusStrip1\"<br />            Me.StatusStrip1.Size = New System.Drawing.Size(260, 22)<br />            Me.StatusStrip1.TabIndex = 1<br />            Me.StatusStrip1.Text = \"StatusStrip1\"<br />            '<br />            'Form1<br />            '<br />            Me.ClientSize = New System.Drawing.Size(260, 200)<br />            Me.Controls.Add(Me.StatusStrip1)<br />            Me.Controls.Add(Me.Panel1)<br />            Me.Name = \"Form1\"<br />            Me.ResumeLayout(False)<br />            Me.PerformLayout()<br /><br />        End Sub<br /><br />        Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load<br />            'Dim fe As New FormStyleEditor<br /><br />            'fe.ShowFormEditor(Me)<br /><br />        End Sub<br />        Friend WithEvents FormStyleEditor1 As FormStyleEditor<br />        Private components As System.ComponentModel.IContainer<br />        Friend WithEvents Panel1 As System.Windows.Forms.Panel<br />        Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip<br />    End Class<br />End Namespace<br /><br />Hope someone can help.<br />Thanks<br />",
+    "PostedDate": "2006-10-02T07:44:58.767-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "5334",
+    "ThreadId": "1662",
+    "Html": "\r\nI converted the project into VB, so now I can enjoy your great work in my language!<br /><br />",
+    "PostedDate": "2006-10-02T17:23:36.33-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "5345",
+    "ThreadId": "1662",
+    "Html": "\r\nDid you manage to solve your issue?<br />",
+    "PostedDate": "2006-10-03T02:19:22.233-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "5380",
+    "ThreadId": "1662",
+    "Html": "\r\nYes, converting the entire project in VB instead of mixing C# and VB corrected the problem.<br />I am now experiencing a full \"skinable\" application!!<br /><br />Thanks<br />",
+    "PostedDate": "2006-10-03T15:51:52.08-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "7198",
+    "ThreadId": "1662",
+    "Html": "\r\nHi CaptnKebec,<br /><br />Is there any chance I could please get a copy of your VB.NET (converted) solution?<br /><br />/evan<br />",
+    "PostedDate": "2006-11-08T19:39:07.563-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "182793",
+    "ThreadId": "1662",
+    "Html": "Can you send me it to my Email that VB.net version, since i don't know C#<br>\r\n<br>\r\nrodney_322@yahoo.com.......thanks!<br>\r\n",
+    "PostedDate": "2009-04-23T07:05:40.03-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "239895",
+    "ThreadId": "1662",
+    "Html": "<p>Dear All, i want also a copy of this App in VB.net, can anyone send me the code to <a href=\"mailto:pf_scorpion@hotmail.com\">pf_scorpion@hotmail.com</a></p>\r\n<p>Regards</p>",
+    "PostedDate": "2009-09-29T02:03:11.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

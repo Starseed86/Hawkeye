@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "4232",
+    "ThreadId": "1301",
+    "Html": "\r\nWe had an issue today with Win2K that I thought I would tell folks about.  Right now the Custom Border Form library P/Invokes to uxtheme.dll.  This dll isn't present on all versions of Windows, and didn't appear to be present on Win2k.  We fixed it by putting a Windows version check around the call to UXTheme.  If anyone else has a more elegant solution I'd love to hear it too.<br /><br />",
+    "PostedDate": "2006-09-08T04:55:27.383-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4268",
+    "ThreadId": "1301",
+    "Html": "\r\nThis discussion has been copied to Work Item 3048. You may wish to continue further discussion there.<br />",
+    "PostedDate": "2006-09-08T13:32:53.187-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

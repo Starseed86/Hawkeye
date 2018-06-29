@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "439526",
+    "ThreadId": "211709",
+    "Html": "If you create an empty (no child controls) LonghornForm and then run it and resize it the added area is not drawn.  If you cover the form with another window and then pop it back up it does redraw the client area OK.  But it doesn't do this on a resize.  If you have child controls that are docked to fill the whole form you don't see the problem but otherwise you do.\r\n\r\nI'd like to use this code in a current project but I need a solution to this problem.\r\n\r\nThanks,\r\n\r\nMark",
+    "PostedDate": "2010-05-05T15:16:15.85-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

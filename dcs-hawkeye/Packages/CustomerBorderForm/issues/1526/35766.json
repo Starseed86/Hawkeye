@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I just downloaded and unzipped the code, compiled in VS 2012 and ran the program. Right off the bat there was no border until I resized the form. The border would then disappear at different times and you would always have to resize to get it back.\n\nThis example does not seem to warrant any further effort.",
+    "LastUpdatedDate": "2014-12-24T09:09:30.493-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2014-12-24T09:09:30.493-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Not Working on Windows 7",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 35766
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

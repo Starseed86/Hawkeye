@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "5165",
+    "ThreadId": "1605",
+    "Html": "\r\nHi!!, and thanks for the component.<br /><br />I have problems to use the component. I don´t know install the component.<br /><br />For instance:<br /><br />I have one project mine(isn´t comercial project), and i want to use  the template Vista.fsl. <br /><br />1- Add archive  vista.fsl<br />2- I Write in the main method: FormStyleManager.Load(\"MyLibrary.fsl\");<br /><br />But .net said: \" the name FormStyleManager doesn´t exist in the actual context\"  (translation to spanish)<br /><br />I have tried add the library but,  I don´t know.<br /><br />How can i do for to use the component?<br /><br />can someone to explain the process stepwise for new persons as(like) me?<br /><br />With a new form?<br /><br />Thanks for all.<br />",
+    "PostedDate": "2006-09-28T03:09:50.813-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "5221",
+    "ThreadId": "1605",
+    "Html": "\r\nPlease, download the latest source code ... take a look at the samples in this latest version.<br /><br />Thanks<br />",
+    "PostedDate": "2006-09-29T01:49:37.583-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

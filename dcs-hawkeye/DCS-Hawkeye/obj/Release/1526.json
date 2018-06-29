@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "From Kris:\n \n1 - when you change of skin, there are some refresh problems\n2 - when resizing window, the window redraw several time... there is a \"flashing\" effect :-(\n3 - Do you think you can improve the speed ?",
+    "LastUpdatedDate": "2017-12-09T17:24:04.087-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2006-08-02T03:34:29.243-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Improve performance",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1526
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "First of all. I just downloaded the source and do not know if this issue has been up here before. But anyhow. Here I go:\n \nHow to reproduce:\n \nIm running XP SP2 - classic mode...\n \n1) I downloaded version 6125 of the source code.\n2) Start the Demo sample.\n3) Check the \"Enable custom borders\" checkbox.\n4) Minimize the Demo window\n5) Restore the Demo window\n \nResult:\nAfter restoring the window, it's height has increased (compared to when it was minimized).\n \nExcpected behaviour:\nThe window should have the same size after it has been restored as it had before being minimized.\n \nNotes:\nThe same behaviour exists when the following is done:\n1) \"Show desktop\" (Win+D or Win+M) \n2) Restore the Demo window. \n \nI now that the same windows messages are not sent in this case compared to the above, but it should behave the same way.",
+    "LastUpdatedDate": "2013-02-14T13:26:05.823-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2006-11-24T04:52:01.22-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Minimize/Restore with hidden caption bar makes window shrink/grow",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 5905
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "To fix this use this code\r\nprotected override void SetBoundsCore(int x, int y, int width, int height, BoundsSpecified specified)\r\n{\r\n    base.SetBoundsCore(x, y, width - 8 + ActiveFormStyle.ClientAreaPadding.Horizontal, height - 34 + ActiveFormStyle.ClientAreaPadding.Vertical, specified);\r\n}\r\n\r\n{8; 34} - Width and height of used window borders in classic theme (it's used to show window context menu)",
+      "PostedDate": "2008-12-09T17:39:40.25-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-12-09T17:40:17.983-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2011-04-11T07:02:06.01-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-14T13:26:05.823-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

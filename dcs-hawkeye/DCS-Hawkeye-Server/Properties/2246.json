@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I have no specific issues - I have not tested the code at this time.  However, reading the multiple comments on the blog, along with no reply answering them, comes this:\n \nMDI support.  Custom border forms should support the effortless switch between MDI and SDI that .net implements for standard forms.  Behavior should be identical, and translation of screen coordinates should be automatic (from screen position to clientarea position within the parent).  Child forms should be separately skinnable from the parent, and the parent should be skinnable as well.\n \nIf this has already been addressed, please notify me (glacialfury@gmail.com) and remove this ticket.\n \nThank you for this project - I will be reading through it extensively in the coming weeks.\n \nglacialfury",
+    "LastUpdatedDate": "2013-02-14T13:26:08.577-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2006-08-17T08:08:07.56-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "MDI support",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2246
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Glacialfury, \nthanks for reminding this. It was also on my radar but I didn't have time to enter it before leaving for vacations. I will try to address this for the next release.",
+      "PostedDate": "2006-08-17T09:53:22.59-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-04T07:09:35.067-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "A+++ for the code mate - really nice example and showing how things work under the hood... I recently attempted to imcorportate this into an MDI sample to see how it would handle and came across issues where the child form's \"skin\" was not being picked up correctly and the buttons were not able to be pressed...\r\n\r\nAny ETA on when the next release will be out with this incorporated?",
+      "PostedDate": "2007-05-04T07:12:36.163-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thanks for this project - i am also facing MDI issue. Its very urgent for me.. could you please help me and let me know how can i acheive this.",
+      "PostedDate": "2007-09-24T03:52:55.933-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I provide a work-around in the Discussion area under the topic \"MDI Forms do not work correctly\"",
+      "PostedDate": "2008-01-29T16:14:30.107-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-14T13:26:08.577-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

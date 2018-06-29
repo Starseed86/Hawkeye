@@ -1,0 +1,17 @@
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\bin\Debug\CustomCaption.exe.config
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\bin\Debug\Properties\Settings.Designer.cs
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\bin\Debug\Properties\Settings.settings
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\bin\Debug\CustomCaption.exe
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\bin\Debug\CustomCaption.pdb
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\bin\Debug\Demo.exe
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\bin\Debug\Lizard.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\bin\Debug\LizardEditor.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\bin\Debug\LizardEditor.pdb
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\bin\Debug\Lizard.pdb
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\bin\Debug\Demo.pdb
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\obj\Debug\CustomCaption.csprojResolveAssemblyReference.cache
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\obj\Debug\Samples.CustomCaption.DemoForm.resources
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\obj\Debug\CustomCaption.Properties.Resources.resources
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\obj\Debug\CustomCaption.csproj.GenerateResource.Cache
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\obj\Debug\CustomCaption.exe
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\Samples\CustomCaption\obj\Debug\CustomCaption.pdb

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "4146",
+    "ThreadId": "1277",
+    "Html": "\r\nHi All,<br /><br />    Before I log this as an issue, I was curious if there has been any testing with XP 64?  We were taking a look at it today and noticed that the frame doesn't render correctly the first time (and really doesn't render at all.  It's not until the window is repainted by dragging a window over it, or by dragging the window off the screen, that it successfully paints itself.  Has anyone else seen this issue before?  Any insight would be appreciated!<br /><br />Many thanks,<br /><br />    Taylor<br />",
+    "PostedDate": "2006-09-07T09:30:28.487-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4176",
+    "ThreadId": "1277",
+    "Html": "\r\nTaytay,<br />  Personally I've never had a chance to work on 64-bit system so I didn't try how this project works on it. Although I will be buying a new home computer this month so it might change. In general we need to do better testing on other platforms. I already know there are some problems when you run it through Terminal Services or on a Virtual Machine. And there is already and issue entered for Vista. But first we need to check if it works fine on all flavors of WinXP and Win2003. I don't even know if it would work on Win2K.<br /><br />So it would be great if any of you can confirm if it works or not on any platform other then 32-bit Windows XP. <br /><br />I've entered work item <a href=\"http://www.codeplex.com/CustomerBorderForm/WorkItem/View.aspx?WorkItemId=2983\">Test the project on different platforms</a> to track this so you can post your comments there.<br />",
+    "PostedDate": "2006-09-07T15:27:39.407-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

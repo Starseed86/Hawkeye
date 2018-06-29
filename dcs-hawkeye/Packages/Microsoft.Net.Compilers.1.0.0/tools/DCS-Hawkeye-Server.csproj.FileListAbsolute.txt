@@ -1,0 +1,169 @@
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\ApplicationInsights.config
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\roslyn\csc.exe
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\roslyn\vbc.exe
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\roslyn\VBCSCompiler.exe
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\DCS-Hawkeye-Server.dll.config
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\DCS-Hawkeye-Server.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\DCS-Hawkeye-Server.pdb
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Antlr3.Runtime.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\EntityFramework.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\EntityFramework.SqlServer.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.Web.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Newtonsoft.Json.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Owin.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\System.Web.Helpers.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\System.Web.Mvc.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\System.Web.Optimization.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\System.Web.Razor.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\System.Web.WebPages.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\System.Web.WebPages.Razor.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\WebGrease.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.Web.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\System.Web.Helpers.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\System.Web.Mvc.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\System.Web.Optimization.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\System.Web.Razor.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\System.Web.WebPages.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\System.Web.WebPages.Razor.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Antlr3.Runtime.pdb
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Newtonsoft.Json.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\EntityFramework.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\EntityFramework.SqlServer.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\obj\Debug\DCS-Hawkeye-Server.csprojResolveAssemblyReference.cache
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\obj\Debug\DCS-Hawkeye-Server.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\DCS-Hawkeye-Server\obj\Debug\DCS-Hawkeye-Server.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\ApplicationInsights.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\roslyn\csc.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\roslyn\vbc.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\DCS-Hawkeye-Server.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\DCS-Hawkeye-Server.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\DCS-Hawkeye-Server.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.Web.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Owin.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\System.Web.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\WebGrease.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.Web.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\System.Web.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\obj\Debug\DCS-Hawkeye-Server.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\obj\Debug\DCS-Hawkeye-Server.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\obj\Debug\DCS-Hawkeye-Server.csproj.CopyComplete
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\obj\Debug\DCS-Hawkeye-Server.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\obj\Debug\DCS-Hawkeye-Server.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\Microsoft.Web.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\MvcContrib.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\dcs-hawkeye\DCS-Hawkeye-Server\bin\MvcContrib.xml

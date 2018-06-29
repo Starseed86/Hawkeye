@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "4419",
+    "ThreadId": "1351",
+    "Html": "\r\nI'm pretty UI-challenged when it comes to graphics but I need my applications to look like I have a clue. Thanks for the work guys.<br />My only suggestion (and I'm sure its coming) is more skins. :)<br />",
+    "PostedDate": "2006-09-11T12:41:19.683-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4429",
+    "ThreadId": "1351",
+    "Html": "\r\nThanks for your interest in our project. <br /><br />As for the lack of skins, you are right that we should expect more request like this. However our current goal is not to create a huge library of skins, but instead provide the code necessary to apply such custom skins to your forms. <br /><br />On the other hand if you know any graphics designer or other source for nice skins let us know and will be happy to include it in our project. <br />",
+    "PostedDate": "2006-09-11T14:25:05.207-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1060680",
+    "ThreadId": "448112",
+    "Html": "i am new to tihis please help me i dont knw how to use this src to my project \r<br />\n<br />\n<br />\nregards \r<br />\ndineshkumar R<br />\n",
+    "PostedDate": "2013-06-24T21:08:08.787-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1083726",
+    "ThreadId": "448112",
+    "Html": "The proper way would be to change the source into a DLL, but if you already have a 'common' library that you'd rather integrate this into (since it's so small), here's a simple way to integrate it.  Create a folder in a project of yours, and drag &amp; drop the LonghornForm.cs file into it.  Then, try changing 1 of your existing Forms into using LonghornForm instead of Form (or MyCustomForm : Form  -&gt;  MyCustomForm : Kobush.Windows.Forms.LonghornForm).  This will generate a compiler error for a missing type, find that type in the source (probably the name of a .cs file, actually) and copy that file into the folder like you did with LonghornForm.  Keep doing this until the project compiles.  This should get you going, although you should also search the discussions for bugfixes - I needed to change one instance usage of 'GetDCEx' with 'GetWindowDC' to get it working on Windows 7.<br />\n",
+    "PostedDate": "2013-08-22T09:29:32.327-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,110 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2006-09-12T08:14:56.59-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Currently title bar can only show standard window buttons. But this can be easily extended to add own custom buttons.",
+    "LastUpdatedDate": "2017-12-09T17:10:30.95-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2006-08-02T03:12:17.67-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Allow adding additional title bar buttons",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 0,
+    "Id": 1525
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Need to decide whether this should be available only from code, from StyleManager or both.",
+      "PostedDate": "2006-08-02T03:12:17.67-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2006-08-17T13:07:55.953-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Associated with changeset 3504.",
+      "PostedDate": "2006-08-17T13:11:43.663-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "It was possible with a previous version of your library...\n\nI was using this code:\n\n        public void AddTrayButton()\n        {\n            /*\n            CustomBorderButtonAppearance appearance = new CustomBorderButtonAppearance();\n            appearance.ImageActive = SkinsManager.GetContentBitmap(\"tray_hover.png\");\n            appearance.ImageHover = SkinsManager.GetContentBitmap(\"tray_hover.png\");\n            appearance.ImageDisabled = SkinsManager.GetContentBitmap(\"tray_normal.png\");\n            appearance.ImageNormal = SkinsManager.GetContentBitmap(\"tray_normal.png\");\n\n            CaptionButton trayButton = new CaptionButton();\n            trayButton.Key = \"tray\";\n            trayButton.Appearance = appearance;\n            trayButton.Visible = true;\n            trayButton.Enabled = true;\n            trayButton.Gaps = new Point(6, -2);\n\n            trayButton.Click += new EventHandler(WinTrayButton_Clicked);\n\n            CaptionButtons.Add(trayButton);\n             */\n        }\n\n\nDo you know how can I adapt it for this version ?",
+      "PostedDate": "2006-09-05T00:13:20.73-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2006-09-08T00:07:51.583-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Associated with changeset 5358.",
+      "PostedDate": "2006-09-08T01:24:17.787-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Associated with changeset 5365.",
+      "PostedDate": "2006-09-08T05:50:49.66-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Associated with changeset 5374.",
+      "PostedDate": "2006-09-08T08:35:52.867-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Associated with changeset 5497.",
+      "PostedDate": "2006-09-10T15:32:57.373-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Associated with changeset 5529.",
+      "PostedDate": "2006-09-11T04:24:46.547-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2006-09-12T08:14:56.59-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-14T13:26:09.933-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-16T03:02:44.757-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-12-09T17:10:30.95-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

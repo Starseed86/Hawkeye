@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "4466",
+    "ThreadId": "1362",
+    "Html": "\r\nHi all,<br /><br />I know I hadn't made any check-in yet, but still I would like to raise a minor issue that I think we should pay attention to.<br /><br />It regards the way we check-in and check-out the project.<br /><br />I've seen in the last weeks a lot of consequent check ins and it can bring some difficulties rolling back or in worst situations, merging two versions based on some dependencies.<br /><br />Therefore, I think we should all pay attention to follow the given rules:<br />- Only one check-in per day per developer.<br />- As often as possible, (daily would be the best) perform a unit build: per day (nighlty builds), every 2 days, or per week. This has to be performed by the coordinator (Kobush in other words).<br /><br />This way, we can avoid getting too many check-ins in codeplex and still get a unit build that we know compiles.<br /><br />What do you think?<br />",
+    "PostedDate": "2006-09-12T06:56:37.173-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

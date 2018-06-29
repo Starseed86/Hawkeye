@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "492774",
+    "ThreadId": "227022",
+    "Html": "<p>hello, im really interested in this project, i was glad to find it but it doesnt seem to work on windows 7. when i start the program the border looks white with not border around it. the caption buttons dont draw after start and restoring from minimized state.</p>\r\n<p>my question would be if anyone got it to work on windows 7 or maybe someone knows a solution to this? ive been trying for quite some time now but just cant get it to work...</p>\r\n<p>&nbsp;</p>\r\n<p>even without the border, so without the longhornform class i would be happy but the form also grows a little everytime its minimized and maximized.</p>\r\n<p>&nbsp;</p>\r\n<p>any help would be great, thank you.</p>\r\n<p>&nbsp;</p>\r\n<p>Politie</p>",
+    "PostedDate": "2010-09-13T06:40:42.427-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "634969",
+    "ThreadId": "227022",
+    "Html": "<p>hi,</p>\r\n<p>I've the same problem. It seems that there are no intentions&nbsp;to solve the bug.</p>",
+    "PostedDate": "2011-06-29T11:49:44.733-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "635065",
+    "ThreadId": "227022",
+    "Html": "<p>doesn't look like it no, ive removed the border and worked with that, had some dificulties that i solved with ugly solutions. it is what it is.</p>",
+    "PostedDate": "2011-06-29T15:08:58.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "660663",
+    "ThreadId": "227022",
+    "Html": "<p>Hello Politie,</p>\r\n<p>The problem might be&nbsp;you won&rsquo;t get a valid <span style=\"font-size: 9.5pt;\" lang=\"EN-US\">hRgn in PaintNonClientArea. So replace GetDCEx by GetWindowDC:</span></p>\r\n<p><span style=\"font-size: 9.5pt;\" lang=\"EN-US\">&nbsp;</span><strong>FormWithNonClientArea.cs</strong></p>\r\n<table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"shape\"><span style=\"color: blue; font-size: 9.5pt;\" lang=\"EN-US\">\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: blue;\">private</span> <span style=\"color: blue;\">void</span> PaintNonClientArea(IntPtr hWnd, IntPtr hRgn)\r\n{\r\n&hellip;&hellip;.. \r\nold code\r\n \r\n           IntPtr hDC = NativeMethods.GetDCEx(hWnd, hRgn,\r\n            (<span style=\"color: blue;\">int</span>)(NativeMethods.DCX.DCX_WINDOW | \r\n                NativeMethods.DCX.DCX_INTERSECTRGN |\r\n                NativeMethods.DCX.DCX_CACHE |\r\n                NativeMethods.DCX.DCX_CLIPSIBLINGS));\r\n \r\n<span style=\"color: blue;\">new</span> Code\r\n           IntPtr hDC = NativeMethods.GetWindowDC(hWnd);\r\n</pre>\r\n</div>\r\n<p>&nbsp;</p>\r\n</span></div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;</p>\r\n<p>You already have to declare <span style=\"font-size: 9.5pt;\" lang=\"EN-US\">GetWindowDC:</span></p>\r\n<p><strong>NativeMethods.cs</strong></p>\r\n<table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"shape\">\r\n<p><span style=\"font-size: 9.5pt;\" lang=\"EN-US\">[<span style=\"color: #2b91af;\">DllImport</span>(<span style=\"color: #a31515;\">\"user32.dll\"</span>)]</span></p>\r\n<p><span style=\"font-size: 9.5pt;\" lang=\"EN-US\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=\"color: blue;\">public</span> <span style=\"color: blue;\">static</span> <span style=\"color: blue;\">extern</span> <span style=\"color: #2b91af;\">IntPtr</span> GetWindowDC(<span style=\"color: #2b91af;\">IntPtr</span> hwnd);</span></p>\r\n<p>&nbsp;</p>\r\n</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>Paul</p>",
+    "PostedDate": "2011-08-19T09:14:25.143-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1083718",
+    "ThreadId": "227022",
+    "Html": "<strong>42na wrote:</strong><br />\n<blockquote>\n...So replace GetDCEx by GetWindowDC:..<br />\n</blockquote>\nThanks, worked.<br />\n<br />\nAs-is, CustomFormBorder v0.5 Alpha (2006.06.16) appears to work on WinXP (x86) but doesn't on Win7 (x64) until after resizing.  Changing GetDCEx to GetWindowDC inside FormWithNonClientArea.PaintNonClientArea appears to have fixed this issue for me.<br />\n",
+    "PostedDate": "2013-08-22T09:21:58.32-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

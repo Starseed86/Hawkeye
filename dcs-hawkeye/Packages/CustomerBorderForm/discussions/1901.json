@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "5930",
+    "ThreadId": "1901",
+    "Html": "\r\nSomething to consider that would be very useful for us application developers. My application, as I'm sure others, has other details about the \"skin\" that your tool is not capturing. Things like accent colors, icons, border sizes, etc.<br />What would be really helpful is if you provided a dictionary in your editor that designers could enter in custom name value pairs of properties. And then in your api allow application developers access to those properties by name. This way we could go to one place for skin generation instead of having to code up another specific editor just for those parts that fall outside of your utility.<br /><ul><ul><li>It would be even cooler if that collection was typed and the editor did things like chose color or serialized images just as it does with the built-in types.</li></ul></ul><br />Thanks, good job so far. I hope you guys keep on developing into a release. <br />",
+    "PostedDate": "2006-10-18T08:05:48.423-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

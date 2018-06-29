@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "4222",
+    "ThreadId": "1298",
+    "Html": "\r\nHi,<br /><br />I keep you informed about the development status...<br /><br />In the new version, there has been several classes name changed.<br /><br />By example,<br />  CustomBorderForm-&gt;LizardForm<br />  Style-&gt;Skin<br />  FormButtonStyle-&gt;CaptionButtonSkin (We already have CaptionButton and not FormButton)<br />  ...<br /><br />It should allow to be more uniform.<br /><br />Also,<br /><br />I have add:<br />- 50% of the \"Custom caption button\", it remain to handle event (in progress) and to adapt the designer<br />- A new Vista skin<br />- A new small sample<br /><br />Regards<br />",
+    "PostedDate": "2006-09-08T02:17:24.493-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4338",
+    "ThreadId": "1298",
+    "Html": "\r\nHi,<br />Today I finally got a chance to take a look at what you done so far and I must say you've done tremendous job! This is exactly what we wanted to do. Thank you!<br /><br />So I've took it a bit further. First, I've split the project into several sub-projects. It's based on the structure you've created. The core classes are in the Lizard projects. For those who want to use the editor it's in the LizardEditor project. Both of them are now class libraries. <br /><br />The samples are now separate windows applications each. This is makes it much easier to test just by changing the startup projects. <br /><br />I also changed few class names. LizardForm (former CustomBorderForm) to SkinnedForm and FormWitnNonClientArea to NonClientBaseForm. <br /><br />Besides this I also moved few files here and there but I hope you will agree with these changes.<br /><br />Now let me know on your progress with custom caption buttons. I see that you are almost done in the core classes but currently the FormSkinEditor doesn't work. Are you working on this or I should take care of this? <br /><br />Also you've made changes to the skin format so the older skins won't work now. I think we should provide automatic conversion for older skins. I've already added the schemaVersion attribute in the skin file specifically to support this. <br />",
+    "PostedDate": "2006-09-10T11:08:18.707-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4363",
+    "ThreadId": "1298",
+    "Html": "\r\nJust to let you know, yesterday I've added some code to do automatic updates from older version of form skin libraries. I'm not 100% happy with it so I might work a bit more on it. I've also adjusted a bit the final schema for the XML file. I hope you like it.  <br />",
+    "PostedDate": "2006-09-10T21:59:47.713-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4367",
+    "ThreadId": "1298",
+    "Html": "\r\nHi,<br /><br />I think you have forgot to add the \".csproj\" file in the source control, please can you add them ?<br /><br />I will review all of theses changes and continue for the custom button. I would like to say that<br />the FormEditor is already working, but it remain a few work.<br /><br />Also, because of theses changes I have change the structure of the \"fsl\" files to be able to support<br />custom buttons.<br /><br />If you can add the project files today I expect to finish this development today.<br /><br />Thanks<br />",
+    "PostedDate": "2006-09-11T00:37:00.557-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4385",
+    "ThreadId": "1298",
+    "Html": "\r\nHi,<br /><br />I have discovered some new problems and stuffs, maybe due to your changes, I m not sure !<br /><br />Anoyway I have already recreate the \"csproj\" files and start to fix all the problems I have find.<br /><br />I'll let you know ;-)<br />",
+    "PostedDate": "2006-09-11T02:48:57.277-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "We had an issue today with Win2K that I thought I would tell folks about.  Right now the Custom Border Form library P/Invokes to uxtheme.dll.  This dll isn't present on all versions of Windows, and didn't appear to be present on Win2k.  We fixed it by putting a Windows version check around the call to UXTheme.  If anyone else has a more elegant solution I'd love to hear it too.",
+    "LastUpdatedDate": "2017-12-09T17:24:06.19-08:00",
+    "PlannedForRelease": "0.51 Alpha",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2006-09-08T13:32:53.607-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Win2k Compatibility issue",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 0,
+    "Id": 3048
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "Id": "2930",
+    "ThreadId": "900",
+    "Html": "\r\nProject Name<br /><br />At first, I would love to see this project renamed to something more appropriate for a library. I understand that kobush created this project based on a set of articles for knowledge sharing but this can’t be a name for a set of assemblies to be used in other projects.<br /><br />When I first implement my own view of kobush’s code, I named it Lizard as lizards change their skin quite often and this is about changing windows skins.<br />Assemblies<br /><br />Right now the project is defined as a single windows application project and it makes it uneasy to use within other projects.<br /><br />Therefore, I went into creating my own set of assemblies.<br /><br />The new project I made is composed of two assemblies (I used the Lizard name for it but this can be changed depending what we choose as a final name for this project):<br /><br />Lizard.dll : is composed of all the classes needed to describe a skin.<br /><br />Lizard.Windows.dll: is composed of all the classes used to implement the Microsoft Windows forms using predefined skins.<br /><br />Scope of the project<br /><br />From my own perspective, I think the scope of the project should be clarified.<br />At first, it was a sample project used to describe how to create your own skinned windows forms using managed code.<br /><br />Then, kobush added a skinning load/save management.<br />As far as I’m concerned here could be what I would like this project to answer:<br />•\tProvide a generic skinning management for windows forms<br />•\tSkinning using same principles as CSS (stylesheets)<br />•\tSkinning not limited to windows forms but also controls.<br />•\tProvide a basic set of controls skinnable.<br />•\tEither bitmap based skins or GDI based skins (see www.componentfactory.com for a good sample)<br /><br />Project structure<br /><br />Here is how I would structure the projects:<br /><br />Lizard.dll<br />•\tSkin.cs // this class contains all definitions of skins to be applied.<br />•\tWindowSkin.cs // This class contains the caption and borders skins.<br />•\tControlSkin.cs // A class that contains a back, border and content (text) skins to define a control skin<br />•\tCaptionButtonSkin.cs // the caption button skin<br />•\tCaptionSkin.cs // This class contains a back, border, text and a collection of caption button skins.<br />•\tBorderSkin.cs // This class describes how borders should be drawn<br />•\tBackSkin.cs // this class describes how a surface should be painted<br />•\tBorderStyles.cs // This flagged enumeration defines the different styles borders can draw (top, bottom, left, right and rounding)<br />•\tColorStyles.cs // This enumeration defines how to fill a surface when painting (Solid, Linear, etc…)<br />•\tImageStyles.cs // This enumeration defines how an image should be rendered inside a surface (Top, Top left, Top right, left, right, bottom, bottom left, bottom right, stretch, tiled, etc…)<br />•\tTextSkin.cs // This class defines a text skin (font &amp; color)<br />•\tBodySkin.cs // This class defines how the client rectangle of a form should be drawn using back, border, content (text) skins.<br />•\tSkinManager.cs // this class is responsible to apply a skin to a windows form.<br /><br />Lizard.Windows.dll<br /><br />•\tCaptionButton.cs // the class that defines a button in the caption of a form.<br />•\tCaptionButtonStates.cs // the enumeration that defines possible states of a caption button.<br />•\tNonClientBaseForm.cs // This class inherits from the System.Windows.Forms.Form class but takes care of the NonClient area (no skinning applied here)<br />•\tNonClientMouseEventArgs.cs<br />•\tNonClientPaintEventArgs.cs<br />•\tSkinableForm.cs // this form is the based class that supports skinning on non client areas (it inherits from the NonClientBaseForm class.<br />•\tWin32 folder/NativeMethods.cs // Contains all the interop for Windows.<br />•\tResources/NonClientImages/ // this is a folder containing all the images used for the default Lizard skin.<br /><br />Another important point regarding windows skins. I think the assembly shouldn’t by design authorize to use the default windows theme (using the EnableSkin property). It seems quite obvious to me that the developers willing to use this assemblies would for sure want to theme their forms and there is no reasons why they would like to allow their users to get the default windows themes.<br />",
+    "PostedDate": "2006-08-18T03:20:28.25-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "2941",
+    "ThreadId": "900",
+    "Html": "\r\nAmadrias,<br />Thanks for your excellent ideas. Thats exactly the direction I see this project heading! <br /><br />I agree that this project should evolve to target the general problem of skinning the entire application.<br /><br />Regarding the project name, I really like the name 'Lizard'. It's pretty self-explanatory and we can get a nice logo too! I'm just thinking of adding word 'Skins' somehow like 'LizardSkins'.<br /><br />Regarding the project structure, I'm also considering splitting this into two assemblies. However, my idea was to separate the design- and runtime-time code and put FormStyleEditor and related classes into separate assembly. I don't understand the purpose of separating the skin definition classes from the Windows runtime. Do you foresee any way to reuse them on another platform (Web/WPF)? <br /><br />Today I'm going out-of-town for the weekend but should be back online Sunday evening to discuss this further.<br /><br />Szymon.<br />",
+    "PostedDate": "2006-08-18T06:09:05.14-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "2942",
+    "ThreadId": "900",
+    "Html": "\r\nOne more point of consideration: based on the feedback from my blog I think we should re-introduce support for .NET 1.x. I still believe we can achieve this with conditional compilation but I might be wrong so we would need separate projects for this as well. <br /><br />Szymon.<br />",
+    "PostedDate": "2006-08-18T06:12:00.06-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "2959",
+    "ThreadId": "900",
+    "Html": "\r\nKobush,<br /><br />By putting the skin definition in a separate assembly allows us to use it in other platforms such as Web, WPF, Flash, whatever...<br /><br />Currently, my personal project has a feature that allows to use an application either on the web or as a smart client application. I'm using a subset of the skins described in my previous post to generate a .css file that is used by a web app and therefore displaying the application the same way as using the windows forms app.<br /><br />Moreover, it would also allow to port the code to other platforms. Mono is going extremelly fast on porting the System.Windows.Forms namespace and it would be cool to have the same behavior on the supported platform too.<br /><br />I do really like the idea of using a stylesheet system because a lot of developers are used to it and the logic of separating document structures and their positioning, appearance is really a good idea.<br /><br />Why wouldn't we move the same direction?...<br />",
+    "PostedDate": "2006-08-18T08:54:24.997-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "2961",
+    "ThreadId": "900",
+    "Html": "\r\nOne more thing about the name. If I can suggest it, I think the project and assemblies should use the Lizard simple name. And we would use LizardSkins as the file name for skins.<br /><br />My 2cents<br />",
+    "PostedDate": "2006-08-18T08:56:52.057-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "3107",
+    "ThreadId": "900",
+    "Html": "\r\nI agree that a scope should be decided for this specific project. It definitely seems like there is a decision to be made between \"Providing a Custom Border\" and \"Providing a Skinned Windows Form\".<br /><br />I think there are alot of differences in those, even more so than what is on the surface.<br /><br />Currently we inherit from a managed form, and then (hackily) implement our own graphics on top of the form.  Essentially doing a double, or partially double drawing for every border item on the form.  If we are to make a \"fully skinnable\" form (ie: winamp style)  We need to think about moving away from direct inheritance in standard form. [maybe disable/change the avail \"WindowsForms modes\".  For a clear understanding, open up good ol' Google Talk and Yahoo! Messenger.  You may (or may not) notice a HUGE difference in the windows themselves.  Yahoo! decided to go with the standard api, add graphics, wrap it up, and use it.  Where google decided to manage a window by themselves. (and did they!)<br />",
+    "PostedDate": "2006-08-21T22:15:53.557-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "3117",
+    "ThreadId": "900",
+    "Html": "\r\nWhat do you mean by the two Yahoo and Google samples? I don't really get the difference between them...<br />",
+    "PostedDate": "2006-08-22T01:51:02.59-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "3129",
+    "ThreadId": "900",
+    "Html": "\r\nI think that we all must agree what is our goal. Till now I was only concerned with skinning the window form itself. However I see a need to extend this also to the contents of the windows -- that is all the contained controls. <br /><br />Personally I use Infragistics components that starting with last releas support application styling. DevExpress controls have similar functionality. However these libraries are huge beasts and not everyone has comfort to relay on one. Hence, as I see it now we should aim to provide components that would allow creating fully skinned application -- that is where all visual content can be controlled by using the skin file -- using simplest means possible. <br /><br />Do we all agree on this?<br /><br />Szymon<br />",
+    "PostedDate": "2006-08-22T04:06:25.727-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "3143",
+    "ThreadId": "900",
+    "Html": "\r\nI do fully agree on this and I would like these controls to use the IExtenderProvider feature in .Net to provide a nice way to apply skin to existing controls and using OwnerDraw. Don't know if it makes much sense but it would be great to have something like:<br /><br />public class MyForm : Lizard.Windows.SkinableForm // I know that's not an official name ;-)<br />{<br />   public MyForm()<br />   {<br /><br />}<br />",
+    "PostedDate": "2006-08-22T07:00:06.193-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "3144",
+    "ThreadId": "900",
+    "Html": "\r\nSorry, I did a wrong manipulation on my previous post.<br /><br />public class MyForm : Lizard.Windows.SkinableForm<br />{<br />   public MyForm()<br />   {<br />     this.Skin = Lizard.SkinManager.Load(\"c:\\default.lizardskin\");<br /><br />     System.Windows.Forms.Button button = new Button();<br />     button.SkinId = \"MyOwnButtonSkin\";<br />     this.Controls.Add(button);<br />   }<br />}<br />",
+    "PostedDate": "2006-08-22T07:06:24.327-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "3154",
+    "ThreadId": "900",
+    "Html": "\r\nActually, although in designer mode extended properties appear just like normal properties, in code you would still have to write:<br /><br />this.SetSkinId(button,\"MyOwnButtonSkin\");<br /><br />But this is indeed a neat idea and I'm using similar mechanism in my own applications. We should evaluate if we can use it for our purposes. <br /><br /><br />",
+    "PostedDate": "2006-08-22T11:45:56.027-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When the source Icon does not provide an icon of size SystemInformation.SmallIconSize, the Form icon is not scaled correctly.\n\nDetails:\nThe CustomBorderForm.SmallIcon setter property uses the Icon class constructor to locate a version of SystemInformation.SmallIconSize, and later in OnNonClientAreaPaint it is _assumed_ that such a size was found.  If it was not found, the icon is still drawn using e.Graphics.DrawIconUnstretched(...) instead of e.Graphics.DrawIcon(...).\n\nFix:\nIn CustomBorderForm.OnNonClientAreaPaint, change the following line:\n```\nif (smallIcon != null)\n```\n...to:\n```\nif (smallIcon != null && smallIcon.Size == SystemInformation.SmallIconSize)\n```",
+    "LastUpdatedDate": "2014-05-19T13:39:34.83-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2014-05-19T13:39:34.83-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Form Icon Incorrectly Scaled",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 35234
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

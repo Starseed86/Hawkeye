@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "31135",
+    "ThreadId": "9573",
+    "Html": "\r\nHi!<br />First of all, thumbs up for such a good work done!!<br /><br />Now, the only problem which I see is that once there are lot of controls put on the form or the form is minimized, and maximized again and again, i.e., <b>Paint method is raised again and again</b>. The form just goes down.<br /><br />I just want to discuss whether there is any way we can increase the performance of the Paint method (WndProc otherwise).<br /><br />",
+    "PostedDate": "2007-04-25T00:12:45.273-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

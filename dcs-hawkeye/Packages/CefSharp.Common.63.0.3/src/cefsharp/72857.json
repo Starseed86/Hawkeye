@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "248848",
+    "ThreadId": "72857",
+    "Html": "<p>Hi. I'm trying to use your code to create Vista style dialog boxes using VC++ 6.0 and MFC for Windows XP. I see all the button state images are encoded within the .FSL XML file. Can you please send me (or post) the actual image bitmaps please?</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2009-10-22T20:56:48.127-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "634963",
+    "ThreadId": "72857",
+    "Html": "<p>If somebody needs the same, then please take a closer look.</p>\n<p>That's base64 encoded. Should'n be that hard to write Convert<span style=\"font-family: Consolas; font-size: x-small;\"><span style=\"font-family: Consolas; font-size: x-small;\">.FromBase64String to get the bytedata.</span></span></p>\n<p><span style=\"font-family: Consolas; font-size: x-small;\"><span style=\"font-family: Consolas; font-size: x-small;\">&nbsp;</span></span></p>\n<p><span style=\"font-family: Consolas; font-size: x-small;\"><span style=\"font-family: Consolas; font-size: x-small;\">greets</span></span></p>\n<p><span style=\"font-family: Consolas; font-size: x-small;\"><span style=\"font-family: Consolas; font-size: x-small;\">dev86</span></span></p>\n<p><span style=\"font-family: Consolas; color: #2b91af; font-size: x-small;\"><span style=\"font-family: Consolas; color: #2b91af; font-size: x-small;\"><span style=\"font-family: Consolas; color: #2b91af; font-size: x-small;\"><span style=\"font-family: Consolas; color: #2b91af; font-size: x-small;\">&nbsp;</span></span></span></span></p>\n<p><span style=\"font-family: Consolas; font-size: x-small;\">&nbsp;</span></p>",
+    "PostedDate": "2011-06-29T11:43:49.06-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

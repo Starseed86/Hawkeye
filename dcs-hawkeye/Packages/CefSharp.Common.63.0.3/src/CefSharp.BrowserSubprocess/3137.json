@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "One of the good ways to see if we are repainting too much our skinned forms is to add a simple WebBrowser control on it, set the url to some simple website (such as codeplex.com for instance) and resize the form.\n \nIf you do so, you'll see that there is a lot of flickering happening on the content of the WebBrowser.\n \nRepeat the same procedure but on a standard System.Windows.Form and you'll see that by resizing the form, you don't get this flickering.\n \nThis means that we are repainting the whole form or its inner controls too often. And I think we should revise the calls to the InvalidateWindow() and Invalidate() methods to make sure we don't call them when they are not needed.\n \nI would also do the same for the implementation of the InvalidateWindow() itself and make sure we are using the right API calls.",
+    "LastUpdatedDate": "2017-12-09T17:24:06.383-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2006-09-12T02:12:29.437-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Refine invalidate calls in base form",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 0,
+    "Id": 3137
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

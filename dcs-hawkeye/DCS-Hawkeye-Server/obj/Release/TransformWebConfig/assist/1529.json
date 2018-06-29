@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "This should also include a MainMenu implementation from Codeable (http://files.codeable.net/skinnedform/) and Cosmo(http://www.parslow.plus.com/VirtualMenu)",
+    "LastUpdatedDate": "2013-02-14T13:26:09.25-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2006-08-02T03:50:58.637-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add support for .NET 1.x",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 0,
+    "Id": 1529
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "This should also include a MainMenu implementation from Codeable.",
+      "PostedDate": "2006-08-02T03:52:40.967-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2006-08-02T03:53:39.64-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2006-08-02T03:54:40.127-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2006-08-02T03:55:52.893-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2006-08-02T03:57:50.367-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2006-08-02T04:05:10.57-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I think it should be considered as a second branch of the project.",
+      "PostedDate": "2006-08-18T09:33:50.223-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-14T13:26:09.25-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

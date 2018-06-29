@@ -1,0 +1,28 @@
+[
+  {
+    "Id": "0",
+    "Name": "0.51 Alpha",
+    "DevelopmentStatus": "Planning",
+    "Description": "This release will contain fixes to several issues found in the 0.5 version.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "0001-01-01T00:00:00",
+    "Files": []
+  },
+  {
+    "Id": "1",
+    "Name": "0.5 Alpha",
+    "DevelopmentStatus": "None",
+    "Description": "This release introduces form style libraries (aka skins) and built-in form style editor component.\r\n\r\nNote that this version does no longer supports .NET 1.x.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "0001-01-01T00:00:00",
+    "Files": [
+      {
+        "Id": "53574932-48ad-482a-b24f-ecbd3018c73c",
+        "FileName": "CustomBorderForm_0_5_src.zip",
+        "Url": "./1/53574932-48ad-482a-b24f-ecbd3018c73c",
+        "Type": "Application",
+        "UploadDate": "2006-08-02T09:29:03.04-07:00"
+      }
+    ]
+  }
+]

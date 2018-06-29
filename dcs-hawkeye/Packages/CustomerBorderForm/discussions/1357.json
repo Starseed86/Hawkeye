@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "4450",
+    "ThreadId": "1357",
+    "Html": "\r\nHi, I've just complete the \"Custom Captions Button\" feature.<br /><br />Everything is checked-in.<br /><br />Also, notice that now:<br />- Library has been refactored and use a new name \"Lizard\"<br />- The fsl files have changed<br /><br />I also think that we should support several \"SkinRenderer\". By default we use \"images\" that are<br />defined in the SkinsEditor. We should also be able to have a custom renderer that \"draw\" the window<br />and the button.<br /><br />We can even add a specific \"rendering language\" or use the XAML etc...<br /><br />It is just an idea <br /><br />Regards<br />",
+    "PostedDate": "2006-09-12T02:34:27.353-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4465",
+    "ThreadId": "1357",
+    "Html": "\r\nI do agree with you: we should base our skinning framework on top of a solid Skin xml definition and then use it to render our stuff. Forget about FSL or just use this file format as a compressed binary skin.<br /><br />That's the way I would see it.<br />",
+    "PostedDate": "2006-09-12T06:47:57.813-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

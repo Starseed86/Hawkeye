@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "By dragging on the caption buttons an old 'normal' looking button is displayed.  Note on the attached file you can see the bottom of it however before using cropper the whole button was visible.",
+    "LastUpdatedDate": "2013-02-14T13:26:05.117-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2008-09-12T11:39:18.867-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Dragging captions buttons displays 'normal' button",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 18475
+  },
+  "FileAttachments": [
+    {
+      "FileId": 6941,
+      "FileName": "altCloseBtn.png",
+      "DownloadUrl": ".\\6941"
+    }
+  ],
+  "Comments": []
+}

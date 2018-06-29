@@ -1,0 +1,90 @@
+[
+  {
+    "Id": "2866",
+    "ThreadId": "882",
+    "Html": "\r\nHi,<br /><br />In case you haven't noticed there is a slight error in the name of this project. It should be 'CustomBorderForm' but by mistake the CodePlex team entered 'CustomerBorderForm'. I've contacted them, but there is no way to change project name in Team System once it was created. But we were given unique opportunity to recreate the project with a new name. We don't have much content so this won't be a big problem. <br /><br />However I've decided to postpone this and ask for your opinion on the name for this project. <br /><br />Current name (CustomBorderForm) is simply the name of the main class from my article. Personally, I like the name 'Skinned Forms' used by Codeable.<br />(http://files.codeable.net/skinnedform/), as it targets the area I started exploring in the 0.5 release.<br /><br />So tell me what do you think?<br /><br />Szymon.<br />",
+    "PostedDate": "2006-08-17T09:56:46.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "2922",
+    "ThreadId": "882",
+    "Html": "\r\nHi kobush,<br /><br />Well, when I created my own dll assembly based on your code, I named it Lizard just because they change their skin.<br /><br />I still think it would be a great name for this project...<br />",
+    "PostedDate": "2006-08-18T01:31:27.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "3106",
+    "ThreadId": "882",
+    "Html": "\r\nI personally don't have any good ideas as far as a title is concerned. I just think it is always best to title projects/solutions/assemblies with the most meaningful names possible.  I prefer branding by company not by product.<br /><br />I mean: What did you google to find kobush in the first place?<br /><br />Just my thoughts.<br />",
+    "PostedDate": "2006-08-21T22:05:00.323-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "3163",
+    "ThreadId": "882",
+    "Html": "\r\nGood point here from Codeable. I've just checked the statistics on my articles. <br /><br />There is indeed a lot of queries like: <br />drawing image border<br />custom form border<br />form without border<br />own title bar button<br /><br />But some refer to technical details found in the article like: <br />window non client area<br />wm<i>ncpaint, wm</i>nccalcsize<br />bufferedgraphics<br />setwindowtheme<br /><br />I was also contacted today by someone regarding few issues with the code. When asked I was told he found it by searching for 'custom forms' in google. <br /><br />But still I think Lizard is pretty cool name. I haven't found any other .NET project with this name. I think we can still get good search hits by providing clear description for the project. I already notice increased interest here on CodePlex than when it existed only on my blog.<br /><br />So at this point I think it should be either 'SkinnedForms' or project 'Lizard'.<br /><br />Szymon<br />",
+    "PostedDate": "2006-08-22T13:55:44.217-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "3184",
+    "ThreadId": "882",
+    "Html": "\r\nWe can always use the brand name, and let the motto be the description.<br /><br />ie:<br /><br />PerfectTitle<br />",
+    "PostedDate": "2006-08-22T22:36:28.953-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "3185",
+    "ThreadId": "882",
+    "Html": "\r\nDamn thing!  they need a confirm, preview, or something.<br /><br /><br />Something like:<br /><br />PerfectTitle<br />  The perfect motto<br /><br />",
+    "PostedDate": "2006-08-22T22:38:00.81-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "3189",
+    "ThreadId": "882",
+    "Html": "\r\nHow about:<br /><br />&lt;b&gt;Lizard&lt;/b&gt;<br />   &lt;i&gt;Skinable Applications&lt;/i&gt;<br />",
+    "PostedDate": "2006-08-23T01:44:13.823-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4148",
+    "ThreadId": "882",
+    "Html": "\r\nI've been lurking for a while, following this cool project, and thought I would jump in and add a few bits to this discussion.<br /><br />I'm actually not too fond of \"Lizard.\"  It sounds....strange to me, and generally has a negative connotation in my opnion.  If we're conveying something that changes skin, I would prefer \"Chameleon,\" but that is harder to spell, so perhaps it would be harder for people to find?  <br /><br />I’m often a fan of projects whose names mean what they say: “DotNetSkin” for example is a name which immediately makes it clear to me what it does.  Granted, it’s already taken, but you see what I mean.  Other competitors on the space are “DirectSkin” and \"Skin Crafter\" - again, more skin references.  Maybe the good “skin” names are already taken, in which case you are probably right to think outside the box and use an animal reference.  Or maybe: “Skin Shifter” perhaps?  SkinShifter.com isn’t taken. :)<br /><br /><br /><br /><br />",
+    "PostedDate": "2006-09-07T09:53:54.85-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4408",
+    "ThreadId": "882",
+    "Html": "\r\nShould we move into this new project in CodePlex kobush?<br /><br />",
+    "PostedDate": "2006-09-11T09:41:55.343-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4426",
+    "ThreadId": "882",
+    "Html": "\r\nAmadrias,<br />  I would still like to settle some things before moving to new space. Like the project license for example. Let's continue to work in this space at least until our next release.<br /><br />BTW. How do you like the changes that Cdamez has made so far? Is this the direction you were thinking?<br />",
+    "PostedDate": "2006-09-11T14:12:05.737-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4448",
+    "ThreadId": "882",
+    "Html": "\r\nI think it is a good step forward and it is clearer on how the overall library is structured.<br /><br />I did my own implementation of it a while ago and I would need to share it with you. Let me know how I should do so we could compare both ways and peek whatever is the best in both of them.<br /><br />Now, another point I think we should definitively make a decision would be what are the objectives we would share on this project. From my point of view, we should start by giving a simple windows skinning library free and easy to use for a developer. <br /><br />But what would be next?<br />We need to agree on which would be our next steps so we make sure we design correctly the assemblies to support future improvements and extended scope and avoid refarctoring or reengineering our code.<br />",
+    "PostedDate": "2006-09-12T02:06:03.107-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

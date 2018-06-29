@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "4154",
+    "ThreadId": "1281",
+    "Html": "\r\nHi,<br /><br />I have work the whole day to reorganize and restructure the library based on your discussions...<br /><br />So, I have check-in a new version that :<br /><br />- I have Create a \".cs\" file per class<br />- We now have more namespace, it will allow us to develop the library and have more and more classes<br />and be able to find what we are searching for...<br />- We have a \"folder\" peer namespace, like this file organisation is the same than namespace organisation<br />- I have add \"#region\" to every files, every file has been reformated in order to be uniform with every all<br /><br />So, Mainly we have the following namespace:<br />- Lizard<br />- LizardEditor<br />- Samples (Will contains every sample)<br /><br />I would like to rename \"Style\" by skin ? if you want ?<br /><br />So, all theses changes have been checked in, if you do not like them, I will deleted all my changes and re-put an old<br />version.<br /><br />Tomorrow I would like to :<br />- continue refactoring (if needed)<br />- add several samples<br />- add custom captions features<br /><br />So, I m sorry to be so fast, but I simply would like to start working on it from a clean version and later<br />be able to keep the same name, structure ... it is why I have do this.<br /><br />Also, please tell me if I can continue this way ? or rollback ?<br /><br />Thanks for all<br />",
+    "PostedDate": "2006-09-07T11:34:56.77-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4165",
+    "ThreadId": "1281",
+    "Html": "\r\nYes, you are fast. But thats good thing. At least thats why we have the source control so we can always rollback anything that we don't like ;-)<br /><br />However few notes here:<br />1) We haven't yet decided on the library name. The name 'Lizard' is pretty cool but there are also some voices against it.<br />2) The same is for the project structure. I would review your changes during the weekend and let you know I any bothers me (or just adjust to my taste). <br />3) I would prefer if we follow a rule of one commit concerning a single thing. So if you are doing a refactoring then please don't commit it together with any bug fixes. <br />4) At the same time to keep track of things if you work on anything first please enter it to a issue tracker. This includes refactoring and project restructuring. This way others will know that some one is already working on this. <br /><br />But I like a lot that finally someone else is working on the code and please continue what you started. I will talk to you over the weekend. <br /><br />Szymon<br />",
+    "PostedDate": "2006-09-07T13:56:49.493-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4169",
+    "ThreadId": "1281",
+    "Html": "\r\nThanks for your answers...<br /><br />Yes, you're right... :-)<br /><br />For the library name, I agree. I do not decide any name, and if you want I will change it in 10 minutes, it is easy to do.<br /><br />For the reminder, I will let you review my changes and wait for your comments.<br /><br />Tomorrow I will work on the \"Custom Caption\"... in fact I have already do 50% of the work in local.<br /><br />I will check it in tomorrow and attach a work item then ?<br /><br />Is it right like this ?<br /><br />thanks for all<br />",
+    "PostedDate": "2006-09-07T14:13:02.033-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "4172",
+    "ThreadId": "1281",
+    "Html": "\r\nJust continue what you have started. It would be great if you can solve the caption buttons issue. <br /><br />Thanks.<br />",
+    "PostedDate": "2006-09-07T15:14:18.773-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

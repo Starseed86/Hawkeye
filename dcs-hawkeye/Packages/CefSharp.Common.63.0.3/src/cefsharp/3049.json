@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "9605",
+    "ThreadId": "3049",
+    "Html": "\r\nFirst of all. I just downloaded the source and do not know if this issue has been up here before. But anyhow. Here I go:<br /><br />How to reproduce:<br /><br />Im running XP SP2 - classic mode...<br /><br />1) I downloaded version 6125 of the source code.<br />2) Start the Demo sample.<br />3) Check the \"Enable custom borders\" checkbox.<br />4) Minimize the Demo window<br />5) Restore the Demo window<br /><br />Result:<br />After restoring the window, it's height has increased (compared to when it was minimized).<br /><br />Excpected behaviour:<br />The window should have the same size after it has been restored as it had before being minimized.<br /><br />Notes:<br />The same behaviour exists when the following is done:<br />1) \"Show desktop\" (Win<u>D or Win</u>M) <br />2) Restore the Demo window. <br /><br />I now that the same windows messages are not sent in this case compared to the above, but it should behave the same way. <br />",
+    "PostedDate": "2006-12-21T00:37:48.72-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44007",
+    "ThreadId": "3049",
+    "Html": "\r\nHi, were you able to solve this problem?<br />Thanks<br />",
+    "PostedDate": "2007-08-07T04:13:20.773-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "88190",
+    "ThreadId": "3049",
+    "Html": "\r\nThe same problem exist for  all custom drawn forms (my own also) . May be the author of this code fix the problem.<br />The minimize restore problem exist if height of the caption  (by changing client area) is changed. If it is kept as the standard OS height you will not get this issue.<br />",
+    "PostedDate": "2008-04-21T23:17:20.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "256370",
+    "ThreadId": "3049",
+    "Html": "<p>My solution, sparked by Justin Rogers <a href=\"http://weblogs.asp.net/justin_rogers/archive/2004/02/20/76915.aspx?CommentPosted=true#commentmessage\">Awesome Windows Forms message pump trick</a>:</p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre>    <span style=\"color:Blue\">private</span> <span style=\"color:Blue\">delegate</span> <span style=\"color:Blue\">void</span> VoidMethodInvoker();\r\n    <span style=\"color:Blue\">public</span> <span style=\"color:Blue\">void</span> ShrinkWindow()\r\n    {\r\n        <span style=\"color:Blue\">int</span> widthAdjust = 2 * SystemInformation.BorderSize.Height;\r\n        <span style=\"color:Blue\">int</span> heightAdjust = SystemInformation.CaptionHeight + 2 * SystemInformation.BorderSize.Height;\r\n        <span style=\"color:Blue\">this</span>.Size = <span style=\"color:Blue\">new</span> System.Drawing.Size(Size.Width - widthAdjust, Size.Height - heightAdjust);\r\n    }\r\n\r\n<span style=\"color:Green\">// Then in the Resize event:</span>\r\n     <span style=\"color:Blue\">case</span> FormWindowState.Normal:\r\n     {\r\n            <span style=\"color:Blue\">this</span>.BeginInvoke(<span style=\"color:Blue\">new</span> VoidMethodInvoker(<span style=\"color:Blue\">this</span>.ShrinkWindow));\r\n\r\n            <span style=\"color:Blue\">break</span>;\r\n     }\r\n\r\nThe BeginInvoke puts the ShrinkWindow call on the message pump; calling it directly from within the Resize event handler is too early </pre>\r\n<pre>and the ResizeEnd event doesn't seem to fire when the caption bar is not visible.  The end user does see this grow and shrink, but it's </pre>\r\n<pre>pretty quick.</pre>\r\n</div>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-11-12T08:09:36.163-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1210042",
+    "ThreadId": "3049",
+    "Html": "I solved it using this answer <a href=\"http://stackoverflow.com/a/12468576/351028\" rel=\"nofollow\">http://stackoverflow.com/a/12468576/351028</a><br />\n<br />\nUser doesn't see anything using this.<br />\n<br />\nYou can see my source here <a href=\"https://bitbucket.org/buchmoyerm/customborderform\" rel=\"nofollow\">https://bitbucket.org/buchmoyerm/customborderform</a><br />\n",
+    "PostedDate": "2014-02-18T12:08:30.353-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

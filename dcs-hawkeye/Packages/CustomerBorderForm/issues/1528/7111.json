@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "It appears that Windows Server 2003 (Enterprise Edition) has problems rendering the styles. When the program first starts up, the custom style is completely invisible. However, the functionality and buttons still work. (You just can't see it.) It seems that if the window is resized, it will correctly redraw the style. If it is minimized and restored, it will become invisible again.\n \nIt does not matter whether the Themes service is on or off. It also does not matter if it is done via Remote Desktop.",
+    "LastUpdatedDate": "2013-02-14T13:26:05.667-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2007-01-08T11:48:57.397-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Windows Server 2003 Issues",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7111
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

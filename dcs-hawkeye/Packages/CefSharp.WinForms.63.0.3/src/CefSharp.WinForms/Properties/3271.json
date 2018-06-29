@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When I maximize my form on a large display (1152x864) the caption bar maximizes beyond the display area of my screen.",
+    "LastUpdatedDate": "2013-02-14T13:26:06.297-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "CustomerBorderForm",
+    "ReportedDate": "2006-09-14T22:28:12.807-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Maximizing on large display offsets caption bar",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 0,
+    "Id": 3271
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "could you send us some screenshot to demonstrate this issue ?",
+      "PostedDate": "2006-09-15T13:39:56.65-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Its tough to see in a screen shot as its only a few pixels but this is the same issue as 3370.",
+      "PostedDate": "2006-09-18T09:06:41.773-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-14T13:26:06.297-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

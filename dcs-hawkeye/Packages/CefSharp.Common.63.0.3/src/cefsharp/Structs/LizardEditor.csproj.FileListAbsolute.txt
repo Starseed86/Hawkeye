@@ -1,0 +1,12 @@
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\LizardEditor\bin\Debug\Properties\Settings.Designer.cs
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\LizardEditor\bin\Debug\Properties\Settings.settings
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\LizardEditor\bin\Debug\LizardEditor.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\LizardEditor\bin\Debug\LizardEditor.pdb
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\LizardEditor\bin\Debug\Lizard.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\LizardEditor\bin\Debug\Lizard.pdb
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\LizardEditor\obj\Debug\LizardEditor.csprojResolveAssemblyReference.cache
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\LizardEditor\obj\Debug\LizardEditor.LizardSkinEditorControl.resources
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\LizardEditor\obj\Debug\LizardEditor.Properties.Resources.resources
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\LizardEditor\obj\Debug\LizardEditor.csproj.GenerateResource.Cache
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\LizardEditor\obj\Debug\LizardEditor.dll
+D:\Projects\VS2015\Projects\DCS-Hawkeye\DCS-Hawkeye\Packages\CustomerBorderForm\sourceCode\sourceCode\LizardEditor\obj\Debug\LizardEditor.pdb
